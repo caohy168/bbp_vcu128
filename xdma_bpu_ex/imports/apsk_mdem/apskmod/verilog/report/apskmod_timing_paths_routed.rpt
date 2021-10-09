@@ -1,0 +1,598 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date              : Tue Jun  8 03:48:27 2021
+| Host              : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command           : report_timing -max_paths 10 -file ./report/apskmod_timing_paths_routed.rpt
+| Design            : apskmod
+| Device            : xcvu37p-fsvh2892
+| Speed File        : -2L  PRODUCTION 1.28 05-08-2020
+| Temperature Grade : E
+-------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             7.647ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.333ns  (logic 0.563ns (24.132%)  route 1.770ns (75.868%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.182     1.591    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/A1
+    SLICE_X150Y460       RAMS64E (Prop_B6LUT_SLICEM_ADR1_O)
+                                                      0.125     1.716 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/RAMS64E_B/O
+                         net (fo=1, routed)           0.017     1.733    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/OB
+    SLICE_X150Y460       MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     1.793 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/F7.A/O
+                         net (fo=1, routed)           0.000     1.793    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/O1
+    SLICE_X150Y460       MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     1.821 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/F8/O
+                         net (fo=1, routed)           0.345     2.166    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4_n_0
+    SLICE_X148Y460       LUT6 (Prop_B6LUT_SLICEL_I5_O)
+                                                      0.148     2.314 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[5]_i_1/O
+                         net (fo=1, routed)           0.049     2.363    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[5]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_BFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.363    
+  -------------------------------------------------------------------
+                         slack                                  7.647    
+
+Slack (MET) :             7.665ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.315ns  (logic 0.502ns (21.685%)  route 1.813ns (78.315%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.317     1.726    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/A1
+    SLICE_X150Y460       RAMS64E (Prop_E6LUT_SLICEM_ADR1_O)
+                                                      0.124     1.850 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/O
+                         net (fo=1, routed)           0.012     1.862    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/OA
+    SLICE_X150Y460       MUXF7 (Prop_F7MUX_EF_SLICEM_I1_O)
+                                                      0.059     1.921 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/F7.A/O
+                         net (fo=1, routed)           0.000     1.921    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/O1
+    SLICE_X150Y460       MUXF8 (Prop_F8MUX_TOP_SLICEM_I1_O)
+                                                      0.028     1.949 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/F8/O
+                         net (fo=1, routed)           0.258     2.207    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3_n_0
+    SLICE_X147Y460       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.089     2.296 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[4]_i_1/O
+                         net (fo=1, routed)           0.049     2.345    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[4]
+    SLICE_X147Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X147Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X147Y460       FDRE (Setup_DFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.345    
+  -------------------------------------------------------------------
+                         slack                                  7.665    
+
+Slack (MET) :             7.757ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.223ns  (logic 0.539ns (24.247%)  route 1.684ns (75.753%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.234     1.643    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/A1
+    SLICE_X149Y458       RAMS64E (Prop_D6LUT_SLICEM_ADR1_O)
+                                                      0.122     1.765 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/RAMS64E_D/O
+                         net (fo=1, routed)           0.025     1.790    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/OD
+    SLICE_X149Y458       MUXF7 (Prop_F7MUX_CD_SLICEM_I0_O)
+                                                      0.062     1.852 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/F7.B/O
+                         net (fo=1, routed)           0.000     1.852    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/O0
+    SLICE_X149Y458       MUXF8 (Prop_F8MUX_BOT_SLICEM_I0_O)
+                                                      0.030     1.882 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/F8/O
+                         net (fo=1, routed)           0.200     2.082    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6_n_0
+    SLICE_X148Y460       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.123     2.205 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[7]_i_2/O
+                         net (fo=1, routed)           0.048     2.253    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[7]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_GFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.253    
+  -------------------------------------------------------------------
+                         slack                                  7.757    
+
+Slack (MET) :             7.793ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.187ns  (logic 0.512ns (23.411%)  route 1.675ns (76.589%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.234     1.643    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/A1
+    SLICE_X149Y458       RAMS64E (Prop_G6LUT_SLICEM_ADR1_O)
+                                                      0.123     1.766 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/RAMS64E_C/O
+                         net (fo=1, routed)           0.017     1.783    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/OC
+    SLICE_X149Y458       MUXF7 (Prop_F7MUX_GH_SLICEM_I1_O)
+                                                      0.060     1.843 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/F7.B/O
+                         net (fo=1, routed)           0.000     1.843    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/O0
+    SLICE_X149Y458       MUXF8 (Prop_F8MUX_TOP_SLICEM_I0_O)
+                                                      0.028     1.871 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/F8/O
+                         net (fo=1, routed)           0.196     2.067    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5_n_0
+    SLICE_X148Y460       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     2.166 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[6]_i_1/O
+                         net (fo=1, routed)           0.051     2.217    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[6]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_HFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.217    
+  -------------------------------------------------------------------
+                         slack                                  7.793    
+
+Slack (MET) :             7.935ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.045ns  (logic 0.440ns (21.516%)  route 1.605ns (78.484%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.436     0.545    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X145Y458       LUT4 (Prop_C5LUT_SLICEM_I1_O)
+                                                      0.099     0.644 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_6/O
+                         net (fo=50, routed)          0.871     1.515    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/A4
+    SLICE_X146Y461       RAMS64E (Prop_B6LUT_SLICEM_ADR4_O)
+                                                      0.052     1.567 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/RAMS64E_B/O
+                         net (fo=1, routed)           0.017     1.584    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/OB
+    SLICE_X146Y461       MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     1.644 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/F7.A/O
+                         net (fo=1, routed)           0.000     1.644    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/O1
+    SLICE_X146Y461       MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     1.672 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/F8/O
+                         net (fo=1, routed)           0.232     1.904    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0_n_0
+    SLICE_X148Y461       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.122     2.026 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[1]_i_1/O
+                         net (fo=1, routed)           0.049     2.075    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[1]
+    SLICE_X148Y461       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y461       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y461       FDRE (Setup_DFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.075    
+  -------------------------------------------------------------------
+                         slack                                  7.935    
+
+Slack (MET) :             7.970ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.010ns  (logic 0.448ns (22.289%)  route 1.562ns (77.711%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.183     1.592    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/A1
+    SLICE_X149Y459       RAMS64E (Prop_A6LUT_SLICEM_ADR1_O)
+                                                      0.125     1.717 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/RAMS64E_A/O
+                         net (fo=1, routed)           0.011     1.728    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/OA
+    SLICE_X149Y459       MUXF7 (Prop_F7MUX_AB_SLICEM_I1_O)
+                                                      0.058     1.786 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/F7.A/O
+                         net (fo=1, routed)           0.000     1.786    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/O1
+    SLICE_X149Y459       MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     1.814 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/F8/O
+                         net (fo=1, routed)           0.141     1.955    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2_n_0
+    SLICE_X148Y460       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     1.990 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[3]_i_1/O
+                         net (fo=1, routed)           0.050     2.040    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[3]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_CFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.040    
+  -------------------------------------------------------------------
+                         slack                                  7.970    
+
+Slack (MET) :             8.168ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/ADR1
+                            (rising edge-triggered cell RAMS64E clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.696ns  (logic 0.202ns (11.910%)  route 1.494ns (88.090%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.043ns = ( 10.043 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.317     1.726    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/A1
+    SLICE_X150Y460       RAMS64E                                      r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/ADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.043    10.043    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/WCLK
+    SLICE_X150Y460       RAMS64E                                      r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/CLK
+                         clock pessimism              0.000    10.043    
+                         clock uncertainty           -0.035    10.008    
+    SLICE_X150Y460       RAMS64E (Setup_E6LUT_SLICEM_CLK_ADR1)
+                                                     -0.114     9.894    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A
+  -------------------------------------------------------------------
+                         required time                          9.894    
+                         arrival time                          -1.726    
+  -------------------------------------------------------------------
+                         slack                                  8.168    
+
+Slack (MET) :             8.205ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.775ns  (logic 0.517ns (29.127%)  route 1.258ns (70.873%))
+  Logic Levels:           4  (LUT4=1 LUT6=2 RAMS32=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          0.681     1.090    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_15_0_0__4/A1
+    SLICE_X149Y462       RAMS32 (Prop_F5LUT_SLICEM_ADR1_O)
+                                                      0.142     1.232 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_15_0_0__4/SP/O
+                         net (fo=1, routed)           0.212     1.444    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_15_0_0__4_n_0
+    SLICE_X148Y461       LUT6 (Prop_G6LUT_SLICEL_I2_O)
+                                                      0.123     1.567 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[2]_i_2/O
+                         net (fo=1, routed)           0.139     1.706    mod_tempin_U/apskmod_mod_tempin_ram_U/q0[2]_i_2_n_0
+    SLICE_X148Y460       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.050     1.756 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[2]_i_1/O
+                         net (fo=1, routed)           0.049     1.805    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[2]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_DFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -1.805    
+  -------------------------------------------------------------------
+                         slack                                  8.205    
+
+Slack (MET) :             8.238ns  (required time - arrival time)
+  Source:                 mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            regslice_both_modq_U/B_V_data_1_payload_B_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.696ns  (logic 0.900ns (53.066%)  route 0.796ns (46.934%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.056ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.076     0.076    mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ap_clk
+    RAMB18_X10Y183       RAMB18E2                                     r  mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X10Y183       RAMB18E2 (Prop_RAMB18E2_U_RAMB181_CLKARDCLK_DOUTADOUT[4])
+                                                      0.900     0.976 r  mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/DOUTADOUT[4]
+                         net (fo=2, routed)           0.796     1.772    regslice_both_modq_U/B_V_data_1_payload_A_reg[31]_0[4]
+    SLICE_X148Y462       FDRE                                         r  regslice_both_modq_U/B_V_data_1_payload_B_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    regslice_both_modq_U/ap_clk
+    SLICE_X148Y462       FDRE                                         r  regslice_both_modq_U/B_V_data_1_payload_B_reg[4]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y462       FDRE (Setup_EFF2_SLICEL_C_D)
+                                                      0.025    10.010    regslice_both_modq_U/B_V_data_1_payload_B_reg[4]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -1.772    
+  -------------------------------------------------------------------
+                         slack                                  8.238    
+
+Slack (MET) :             8.239ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg/DINADIN[4]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.474ns  (logic 0.245ns (16.621%)  route 1.229ns (83.379%))
+  Logic Levels:           2  (LUT2=1 LUT6=1)
+  Clock Path Skew:        0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.039ns = ( 10.039 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.272     0.381    mod_tempouti_U/apskmod_mod_tempouti_ram_U/Q[0]
+    SLICE_X146Y459       LUT2 (Prop_C5LUT_SLICEM_I0_O)
+                                                      0.068     0.449 r  mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg_i_39/O
+                         net (fo=62, routed)          0.675     1.124    mod_tempin_U/apskmod_mod_tempin_ram_U/p_68_in
+    SLICE_X148Y456       LUT6 (Prop_B6LUT_SLICEL_I2_O)
+                                                      0.098     1.222 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_i_22__0/O
+                         net (fo=1, routed)           0.282     1.504    mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg_0[4]
+    RAMB18_X10Y182       RAMB18E2                                     r  mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg/DINADIN[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.039    10.039    mod_tempouti_U/apskmod_mod_tempouti_ram_U/ap_clk
+    RAMB18_X10Y182       RAMB18E2                                     r  mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+                         clock pessimism              0.000    10.039    
+                         clock uncertainty           -0.035    10.004    
+    RAMB18_X10Y182       RAMB18E2 (Setup_RAMB18E2_L_RAMB180_CLKARDCLK_DINADIN[4])
+                                                     -0.261     9.743    mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg
+  -------------------------------------------------------------------
+                         required time                          9.743    
+                         arrival time                          -1.504    
+  -------------------------------------------------------------------
+                         slack                                  8.239    
+
+
+
+

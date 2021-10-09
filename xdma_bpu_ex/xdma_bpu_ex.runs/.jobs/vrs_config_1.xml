@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="encoders_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/encoders_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="decoders_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/decoders_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddc_out_fifo_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/ddc_out_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_fifo_t8_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/axis_fifo_t8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="ddc_out_fifo_synth_1"/>
+	</Run>
+	<Run Id="axis_fifo_t_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/axis_fifo_t_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="duc_out_fifo_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/duc_out_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="axis_fifo_t_synth_1"/>
+	</Run>
+	<Run Id="bbp_mmc_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/bbp_mmc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_ddc_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/add_ddc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sub_ddc_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/sub_ddc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sub_duc_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/sub_duc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_duc_synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/add_duc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="encoders_synth_1"/>
+		<Parent Id="decoders_synth_1"/>
+		<Parent Id="ddc_out_fifo_synth_1"/>
+		<Parent Id="axis_fifo_t8_synth_1"/>
+		<Parent Id="axis_fifo_t_synth_1"/>
+		<Parent Id="duc_out_fifo_synth_1"/>
+		<Parent Id="bbp_mmc_synth_1"/>
+		<Parent Id="add_ddc_synth_1"/>
+		<Parent Id="sub_ddc_synth_1"/>
+		<Parent Id="sub_duc_synth_1"/>
+		<Parent Id="add_duc_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="encoders_synth_1"/>
+		<Parent Id="decoders_synth_1"/>
+		<Parent Id="ddc_out_fifo_synth_1"/>
+		<Parent Id="axis_fifo_t8_synth_1"/>
+		<Parent Id="axis_fifo_t_synth_1"/>
+		<Parent Id="duc_out_fifo_synth_1"/>
+		<Parent Id="bbp_mmc_synth_1"/>
+		<Parent Id="add_ddc_synth_1"/>
+		<Parent Id="sub_ddc_synth_1"/>
+		<Parent Id="sub_duc_synth_1"/>
+		<Parent Id="add_duc_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

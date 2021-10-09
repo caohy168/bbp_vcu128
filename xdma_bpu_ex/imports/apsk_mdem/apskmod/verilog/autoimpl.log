@@ -1,0 +1,3006 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun  8 03:42:51 2021
+# Process ID: 99198
+# Current directory: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog
+# Command line: vivado -notrace -mode batch -source run_vivado.tcl
+# Log file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/vivado.log
+# Journal file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+[Tue Jun  8 03:43:01 2021] Launched synth_1...
+Run output will be captured here: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Tue Jun  8 03:43:01 2021] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log apskmod.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source apskmod.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source apskmod.tcl -notrace
+Command: synth_design -top apskmod -part xcvu37p-fsvh2892-2L-e -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu37p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu37p'
+INFO: [Device 21-403] Loading part xcvu37p-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 99938
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3220.984 ; gain = 173.715 ; free physical = 64797 ; free virtual = 71192
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'apskmod' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 7'b0000001 
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_state3 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state6 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state10 bound to: 7'b1000000 
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempin' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:37]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 340 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempin_ram' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 340 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempin_ram' (1#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempin' (2#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:37]
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempouti' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:37]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 340 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempouti_ram' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 340 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempouti_ram' (3#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempouti' (4#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:37]
+INFO: [Synth 8-6157] synthesizing module 'apskmod_regslice_both' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_regslice_both' (5#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'apskmod_regslice_both__parameterized0' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_regslice_both__parameterized0' (5#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'apskmod' (6#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3281.891 ; gain = 234.621 ; free physical = 65311 ; free virtual = 71708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3296.766 ; gain = 249.496 ; free physical = 65368 ; free virtual = 71768
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3296.766 ; gain = 249.496 ; free physical = 65368 ; free virtual = 71768
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3296.766 ; gain = 0.000 ; free physical = 65362 ; free virtual = 71761
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.xdc]
+Finished Parsing XDC File [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3474.266 ; gain = 0.000 ; free physical = 65078 ; free virtual = 71554
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3474.266 ; gain = 0.000 ; free physical = 65082 ; free virtual = 71558
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65229 ; free virtual = 71674
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu37p-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65234 ; free virtual = 71678
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65234 ; free virtual = 71678
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "apskmod_mod_tempin_ram:/ram_reg" of size (depth=340 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65220 ; free virtual = 71665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	              10K Bit	(340 X 32 bit)          RAMs := 2     
+	               2K Bit	(340 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	  33 Input   32 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "apskmod/mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg" of size (depth=340 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+RAM ("apskmod/mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg") is too shallow (depth = 340) to use URAM. Choosing BRAM instead of URAM 
+RAM ("apskmod/mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg") is too shallow (depth = 340) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-6904] The RAM "apskmod/mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg" of size (depth=340 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65141 ; free virtual = 71589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|apskmod     | mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
+|apskmod     | mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|Module Name | RTL Object                                    | Inference | Size (Depth x Width) | Primitives                                | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|apskmod     | mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg | Implied   | 512 x 8              | RAM16X1S x 16	RAM64X1S x 8	RAM256X1S x 8	 | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 3770.820 ; gain = 723.551 ; free physical = 64459 ; free virtual = 70957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 3796.852 ; gain = 749.582 ; free physical = 64430 ; free virtual = 70944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|apskmod     | mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
+|apskmod     | mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|Module Name | RTL Object                                    | Inference | Size (Depth x Width) | Primitives                                | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|apskmod     | mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg | Implied   | 512 x 8              | RAM16X1S x 16	RAM64X1S x 8	RAM256X1S x 8	 | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64427 ; free virtual = 70943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64430 ; free virtual = 70940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64430 ; free virtual = 70940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |LUT1      |     3|
+|2     |LUT2      |    16|
+|3     |LUT3      |    90|
+|4     |LUT4      |    28|
+|5     |LUT5      |    22|
+|6     |LUT6      |    98|
+|7     |RAM16X1S  |    16|
+|8     |RAM256X1S |     8|
+|9     |RAM64X1S  |     8|
+|10    |RAMB18E2  |     2|
+|11    |FDRE      |   213|
+|12    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 3804.859 ; gain = 580.090 ; free physical = 64466 ; free virtual = 70976
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.867 ; gain = 757.590 ; free physical = 64466 ; free virtual = 70976
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3815.828 ; gain = 0.000 ; free physical = 64569 ; free virtual = 71077
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3899.195 ; gain = 0.000 ; free physical = 64484 ; free virtual = 70988
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 3899.195 ; gain = 1508.293 ; free physical = 64624 ; free virtual = 71128
+INFO: [Common 17-1381] The checkpoint '/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/synth_1/apskmod.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file apskmod_utilization_synth.rpt -pb apskmod_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 03:44:08 2021...
+[Tue Jun  8 03:44:10 2021] synth_1 finished
+wait_on_run: Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 2391.953 ; gain = 0.000 ; free physical = 66959 ; free virtual = 73456
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xcvu37p-fsvh2892-2L-e
+INFO: [Device 21-403] Loading part xcvu37p-fsvh2892-2L-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3044.207 ; gain = 0.000 ; free physical = 65737 ; free virtual = 72238
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.xdc]
+Finished Parsing XDC File [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3187.730 ; gain = 0.000 ; free physical = 65604 ; free virtual = 72107
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 3187.730 ; gain = 795.777 ; free physical = 65604 ; free virtual = 72107
+Running report: report_utilization -file ./report/apskmod_utilization_synth.rpt
+Contents of report file './report/apskmod_utilization_synth.rpt' is as follows:
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Jun  8 03:44:29 2021
+| Host         : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command      : report_utilization -file ./report/apskmod_utilization_synth.rpt
+| Design       : apskmod
+| Device       : xcvu37pfsvh2892-2L
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. CLB Logic
+1.1 Summary of Registers by Type
+2. BLOCKRAM
+3. ARITHMETIC
+4. I/O
+5. CLOCK
+6. ADVANCED
+7. CONFIGURATION
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+11. SLR Connectivity
+12. SLR Connectivity Matrix
+13. SLR CLB Logic and Dedicated Block Utilization
+14. SLR IO Utilization
+
+1. CLB Logic
+------------
+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| CLB LUTs*                  |  267 |     0 |   1303680 |  0.02 |
+|   LUT as Logic             |  211 |     0 |   1303680 |  0.02 |
+|   LUT as Memory            |   56 |     0 |    600960 | <0.01 |
+|     LUT as Distributed RAM |   56 |     0 |           |       |
+|     LUT as Shift Register  |    0 |     0 |           |       |
+| CLB Registers              |  214 |     0 |   2607360 | <0.01 |
+|   Register as Flip Flop    |  214 |     0 |   2607360 | <0.01 |
+|   Register as Latch        |    0 |     0 |   2607360 |  0.00 |
+| CARRY8                     |    0 |     0 |    162960 |  0.00 |
+| F7 Muxes                   |   16 |     0 |    651840 | <0.01 |
+| F8 Muxes                   |    8 |     0 |    325920 | <0.01 |
+| F9 Muxes                   |    0 |     0 |    162960 |  0.00 |
++----------------------------+------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 1     |          Yes |         Set |            - |
+| 213   |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. BLOCKRAM
+-----------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |    1 |     0 |      2016 |  0.05 |
+|   RAMB36/FIFO*    |    0 |     0 |      2016 |  0.00 |
+|   RAMB18          |    2 |     0 |      4032 |  0.05 |
+|     RAMB18E2 only |    2 |       |           |       |
+| URAM              |    0 |     0 |       960 |  0.00 |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
+
+
+3. ARITHMETIC
+-------------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |      9024 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+4. I/O
+------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| Bonded IOB |    0 |     0 |       624 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+5. CLOCK
+--------
+
++----------------------+------+-------+-----------+-------+
+|       Site Type      | Used | Fixed | Available | Util% |
++----------------------+------+-------+-----------+-------+
+| GLOBAL CLOCK BUFFERs |    0 |     0 |      1008 |  0.00 |
+|   BUFGCE             |    0 |     0 |       288 |  0.00 |
+|   BUFGCE_DIV         |    0 |     0 |        48 |  0.00 |
+|   BUFG_GT            |    0 |     0 |       576 |  0.00 |
+|   BUFGCTRL*          |    0 |     0 |        96 |  0.00 |
+| PLL                  |    0 |     0 |        24 |  0.00 |
+| MMCM                 |    0 |     0 |        12 |  0.00 |
++----------------------+------+-------+-----------+-------+
+* Note: Each used BUFGCTRL counts as two GLOBAL CLOCK BUFFERs. This table does not include global clocking resources, only buffer cell usage. See the Clock Utilization Report (report_clock_utilization) for detailed accounting of global clocking resource availability.
+
+
+6. ADVANCED
+-----------
+
++----------------------+------+-------+-----------+-------+
+|       Site Type      | Used | Fixed | Available | Util% |
++----------------------+------+-------+-----------+-------+
+| CMACE4               |    0 |     0 |         8 |  0.00 |
+| GTYE4_CHANNEL        |    0 |     0 |        96 |  0.00 |
+| GTYE4_COMMON         |    0 |     0 |        24 |  0.00 |
+| HBM_REF_CLK          |    0 |     0 |         2 |  0.00 |
+| HBM_SNGLBLI_INTF_APB |    0 |     0 |        32 |  0.00 |
+| HBM_SNGLBLI_INTF_AXI |    0 |     0 |        32 |  0.00 |
+| ILKNE4               |    0 |     0 |         4 |  0.00 |
+| OBUFDS_GTE4          |    0 |     0 |        48 |  0.00 |
+| OBUFDS_GTE4_ADV      |    0 |     0 |        48 |  0.00 |
+| PCIE40E4             |    0 |     0 |         2 |  0.00 |
+| PCIE4CE4             |    0 |     0 |         4 |  0.00 |
+| SYSMONE4             |    0 |     0 |         3 |  0.00 |
++----------------------+------+-------+-----------+-------+
+
+
+7. CONFIGURATION
+----------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |        12 |  0.00 |
+| DNA_PORTE2  |    0 |     0 |         3 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         3 |  0.00 |
+| FRAME_ECCE4 |    0 |     0 |         3 |  0.00 |
+| ICAPE3      |    0 |     0 |         6 |  0.00 |
+| MASTER_JTAG |    0 |     0 |         3 |  0.00 |
+| STARTUPE3   |    0 |     0 |         3 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     |  213 |            Register |
+| LUT6     |   98 |                 CLB |
+| LUT3     |   90 |                 CLB |
+| RAMS64E  |   40 |                 CLB |
+| LUT4     |   28 |                 CLB |
+| LUT5     |   22 |                 CLB |
+| RAMS32   |   16 |                 CLB |
+| MUXF7    |   16 |                 CLB |
+| LUT2     |   16 |                 CLB |
+| MUXF8    |    8 |                 CLB |
+| LUT1     |    3 |                 CLB |
+| RAMB18E2 |    2 |            BLOCKRAM |
+| FDSE     |    1 |            Register |
++----------+------+---------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+11. SLR Connectivity
+--------------------
+
++----------------------------------+------+-------+-----------+-------+
+|                                  | Used | Fixed | Available | Util% |
++----------------------------------+------+-------+-----------+-------+
+| SLR2 <-> SLR1                    |    0 |       |     23040 |  0.00 |
+|   SLR1 -> SLR2                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
+|   SLR2 -> SLR1                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
+| SLR1 <-> SLR0                    |    0 |       |     23040 |  0.00 |
+|   SLR0 -> SLR1                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
+|   SLR1 -> SLR0                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
++----------------------------------+------+-------+-----------+-------+
+| Total SLLs Used                  |    0 |       |           |       |
++----------------------------------+------+-------+-----------+-------+
+
+
+12. SLR Connectivity Matrix
+---------------------------
+
++-----------+------+------+------+
+| FROM \ TO | SLR2 | SLR1 | SLR0 |
++-----------+------+------+------+
+| SLR2      |    0 |    0 |    0 |
+| SLR1      |    0 |    0 |    0 |
+| SLR0      |    0 |    0 |    0 |
++-----------+------+------+------+
+
+
+13. SLR CLB Logic and Dedicated Block Utilization
+-------------------------------------------------
+
++----------------------------+------+------+------+--------+--------+--------+
+|          Site Type         | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++----------------------------+------+------+------+--------+--------+--------+
+| CLB                        |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|   CLBL                     |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|   CLBM                     |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| CLB LUTs                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|   LUT as Logic             |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|   LUT as Memory            |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|     LUT as Distributed RAM |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|     LUT as Shift Register  |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| CLB Registers              |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| CARRY8                     |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F7 Muxes                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F8 Muxes                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9 Muxes                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| Block RAM Tile             |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|   RAMB36/FIFO              |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|   RAMB18                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| URAM                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| PLL                        |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| MMCM                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| Unique Control Sets        |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
++----------------------------+------+------+------+--------+--------+--------+
+* Note: Available Control Sets based on CLB Registers / 8
+
+
+14. SLR IO Utilization
+----------------------
+
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+| SLR Index | Used IOBs | (%)IOBs | Used IPADs | (%)IPADs | Used OPADs | (%)OPADs | GTs |
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+| SLR2      |         0 |    0.00 |          0 |     0.00 |          0 |     0.00 |   0 |
+| SLR1      |         0 |    0.00 |          0 |     0.00 |          0 |     0.00 |   0 |
+| SLR0      |         0 |    0.00 |          0 |     0.00 |          0 |     0.00 |   0 |
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+| Total     |         0 |         |          0 |          |          0 |          |   0 |
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+
+
+
+Running report: report_timing_summary -file ./report/apskmod_timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 4676.523 ; gain = 1488.793 ; free physical = 64548 ; free virtual = 71050
+Contents of report file './report/apskmod_timing_synth.rpt' is as follows:
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date              : Tue Jun  8 03:45:08 2021
+| Host              : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command           : report_timing_summary -file ./report/apskmod_timing_synth.rpt
+| Design            : apskmod
+| Device            : xcvu37p-fsvh2892
+| Speed File        : -2L  PRODUCTION 1.28 05-08-2020
+| Temperature Grade : E
+-----------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (13)
+6. checking no_output_delay (70)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (13)
+-------------------------------
+ There are 13 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (70)
+--------------------------------
+ There are 70 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      8.623        0.000                      0                  989        0.084        0.000                      0                  989        4.458        0.000                       0                   274  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
+-----   ------------       ----------      --------------
+ap_clk  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+ap_clk              8.623        0.000                      0                  989        0.084        0.000                      0                  989        4.458        0.000                       0                   274  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  ap_clk
+  To Clock:  ap_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        8.623ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.084ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.458ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             8.623ns  (required time - arrival time)
+  Source:                 i_reg_1302_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0/RAMS64E_A/WE
+                            (rising edge-triggered cell RAMS64E clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.162ns  (logic 0.303ns (26.076%)  route 0.859ns (73.924%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.000     0.000    ap_clk
+                         FDRE                                         r  i_reg_1302_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.077 r  i_reg_1302_reg[0]/Q
+                         net (fo=9, unplaced)         0.185     0.262    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]_1[0]
+                         LUT6 (Prop_LUT6_I0_O)        0.150     0.412 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ap_CS_fsm[2]_i_2/O
+                         net (fo=4, unplaced)         0.197     0.609    regslice_both_mod_datin_U/q0_reg[7]
+                         LUT6 (Prop_LUT6_I3_O)        0.038     0.647 r  regslice_both_mod_datin_U/i_reg_1302[8]_i_2/O
+                         net (fo=14, unplaced)        0.226     0.873    regslice_both_mod_datin_U/i_reg_1302_reg[8]
+                         LUT6 (Prop_LUT6_I1_O)        0.038     0.911 r  regslice_both_mod_datin_U/ram_reg_0_255_0_0_i_2/O
+                         net (fo=32, unplaced)        0.251     1.162    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0/WE
+                         RAMS64E                                      r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0/RAMS64E_A/WE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.000    10.000    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0/WCLK
+                         RAMS64E                                      r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0/RAMS64E_A/CLK
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         RAMS64E (Setup_RAMS64E_CLK_WE)
+                                                     -0.180     9.785    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0/RAMS64E_A
+  -------------------------------------------------------------------
+                         required time                          9.785    
+                         arrival time                          -1.162    
+  -------------------------------------------------------------------
+                         slack                                  8.623    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.084ns  (arrival time - required time)
+  Source:                 ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ap_CS_fsm_reg[0]/D
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        0.130ns  (logic 0.061ns (46.923%)  route 0.069ns (53.077%))
+  Logic Levels:           1  (LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.000     0.000    ap_clk
+                         FDSE                                         r  ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_FDSE_C_Q)         0.038     0.038 r  ap_CS_fsm_reg[0]/Q
+                         net (fo=4, unplaced)         0.053     0.091    regslice_both_modi_U/Q[0]
+                         LUT4 (Prop_LUT4_I3_O)        0.023     0.114 r  regslice_both_modi_U/ap_CS_fsm[0]_i_1/O
+                         net (fo=1, unplaced)         0.016     0.130    ap_NS_fsm[0]
+                         FDSE                                         r  ap_CS_fsm_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.000     0.000    ap_clk
+                         FDSE                                         r  ap_CS_fsm_reg[0]/C
+                         clock pessimism              0.000     0.000    
+                         FDSE (Hold_FDSE_C_D)         0.046     0.046    ap_CS_fsm_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.046    
+                         arrival time                           0.130    
+  -------------------------------------------------------------------
+                         slack                                  0.084    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         ap_clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { ap_clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     RAMB18E2/CLKARDCLK  n/a            1.569         10.000      8.431                mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+Low Pulse Width   Slow    RAMB18E2/CLKARDCLK  n/a            0.542         5.000       4.458                mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+High Pulse Width  Slow    RAMB18E2/CLKARDCLK  n/a            0.542         5.000       4.458                mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+
+
+
+
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/report/apskmod.dcp' has been generated.
+HLS EXTRACTION: calculating BRAM count: (2 bram18) + 2 * (0 bram36)
+HLS EXTRACTION: synth area_totals:  0 1303680 2607360 9024 4032 {0 } 960
+HLS EXTRACTION: synth area_current: 0 267 214 0 2 0 0 0 0 960
+HLS EXTRACTION: generated /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/report/verilog/apskmod_export.xml
+
+
+Implementation tool: Xilinx Vivado v.2020.2
+Project:             apskmod
+Solution:            solution1
+Device target:       xcvu37p-fsvh2892-2L-e
+Report date:         Tue Jun 08 03:45:08 EDT 2021
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:            267
+FF:             214
+DSP:              0
+BRAM:             2
+SRL:              0
+URAM:             0
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    1.569
+Timing met
+
+HLS EXTRACTION: generated /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/report/verilog/apskmod_export.rpt
+INFO: [Timing 38-480] Writing timing data to binary archive.
+[Tue Jun  8 03:45:09 2021] Launched impl_1...
+Run output will be captured here: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/runme.log
+[Tue Jun  8 03:45:09 2021] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log apskmod.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source apskmod.tcl -notrace
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source apskmod.tcl -notrace
+Command: open_checkpoint /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2392.801 ; gain = 0.000 ; free physical = 64210 ; free virtual = 70709
+INFO: [Device 21-403] Loading part xcvu37p-fsvh2892-2L-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3040.293 ; gain = 0.000 ; free physical = 62892 ; free virtual = 69395
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3485.496 ; gain = 0.000 ; free physical = 62515 ; free virtual = 69014
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 3485.496 ; gain = 1092.695 ; free physical = 62514 ; free virtual = 69013
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu37p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu37p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3674.500 ; gain = 181.000 ; free physical = 62495 ; free virtual = 68999
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: 5f34d721
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3674.500 ; gain = 0.000 ; free physical = 62481 ; free virtual = 68985
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 17 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3719.496 ; gain = 24.012 ; free physical = 62399 ; free virtual = 68898
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3719.496 ; gain = 24.012 ; free physical = 62399 ; free virtual = 68898
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3719.496 ; gain = 24.012 ; free physical = 62399 ; free virtual = 68898
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3719.496 ; gain = 24.012 ; free physical = 62402 ; free virtual = 68901
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3719.496 ; gain = 24.012 ; free physical = 62402 ; free virtual = 68901
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3719.496 ; gain = 24.012 ; free physical = 62402 ; free virtual = 68901
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3719.496 ; gain = 0.000 ; free physical = 62402 ; free virtual = 68901
+Ending Logic Optimization Task | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3719.496 ; gain = 24.012 ; free physical = 62402 ; free virtual = 68901
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4260.367 ; gain = 0.000 ; free physical = 62144 ; free virtual = 68645
+Ending Power Optimization Task | Checksum: deb25e44
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 4260.367 ; gain = 540.871 ; free physical = 62161 ; free virtual = 68661
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4260.367 ; gain = 0.000 ; free physical = 62161 ; free virtual = 68661
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4260.367 ; gain = 0.000 ; free physical = 62161 ; free virtual = 68661
+Ending Netlist Obfuscation Task | Checksum: deb25e44
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4260.367 ; gain = 0.000 ; free physical = 62161 ; free virtual = 68661
+INFO: [Common 17-83] Releasing license: Implementation
+33 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 4260.367 ; gain = 774.871 ; free physical = 62161 ; free virtual = 68661
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file apskmod_drc_opted.rpt -pb apskmod_drc_opted.pb -rpx apskmod_drc_opted.rpx
+Command: report_drc -file apskmod_drc_opted.rpt -pb apskmod_drc_opted.pb -rpx apskmod_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 4935.422 ; gain = 675.055 ; free physical = 61452 ; free virtual = 67956
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu37p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu37p'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-113] Running place_design in ultrathreads mode using maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4935.422 ; gain = 0.000 ; free physical = 61465 ; free virtual = 67968
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 2d43618e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4935.422 ; gain = 0.000 ; free physical = 61465 ; free virtual = 67968
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4935.422 ; gain = 0.000 ; free physical = 61465 ; free virtual = 67968
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d585490d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4935.422 ; gain = 0.000 ; free physical = 61443 ; free virtual = 67943
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: fb2f02b8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 5404.547 ; gain = 469.125 ; free physical = 61345 ; free virtual = 67845
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: fb2f02b8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 5404.547 ; gain = 469.125 ; free physical = 61345 ; free virtual = 67845
+Phase 1 Placer Initialization | Checksum: fb2f02b8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 5404.547 ; gain = 469.125 ; free physical = 61328 ; free virtual = 67828
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1bd408304
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 5404.547 ; gain = 469.125 ; free physical = 61282 ; free virtual = 67782
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: e6adf0a3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 5404.547 ; gain = 469.125 ; free physical = 61279 ; free virtual = 67778
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: e6adf0a3
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 5411.062 ; gain = 475.641 ; free physical = 61175 ; free virtual = 67675
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 15ec18cb6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 5411.062 ; gain = 475.641 ; free physical = 61175 ; free virtual = 67675
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 15ec18cb6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 5411.062 ; gain = 475.641 ; free physical = 61175 ; free virtual = 67675
+Phase 2.1.1 Partition Driven Placement | Checksum: 15ec18cb6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 5411.062 ; gain = 475.641 ; free physical = 61180 ; free virtual = 67681
+Phase 2.1 Floorplanning | Checksum: ee8f88f3
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 5411.062 ; gain = 475.641 ; free physical = 61180 ; free virtual = 67681
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: ee8f88f3
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 5411.062 ; gain = 475.641 ; free physical = 61180 ; free virtual = 67681
+
+Phase 2.3 Global Placement Core
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 45 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 15 nets or cells. Created 0 new cell, deleted 15 existing cells and moved 0 existing cell
+INFO: [Physopt 32-69] No nets found for rewiring optimization.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6165.535 ; gain = 0.000 ; free physical = 61241 ; free virtual = 67722
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             15  |                    15  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             15  |                    15  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 2a01c06a7
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:33 . Memory (MB): peak = 6165.535 ; gain = 1230.113 ; free physical = 61241 ; free virtual = 67722
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+Phase 2.3 Global Placement Core | Checksum: 2423c75d9
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:36 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61176 ; free virtual = 67710
+Phase 2 Global Placement | Checksum: 2423c75d9
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:36 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61209 ; free virtual = 67744
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 26919871d
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61204 ; free virtual = 67739
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1749ff8f0
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61165 ; free virtual = 67699
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 173c10916
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:40 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61201 ; free virtual = 67735
+
+Phase 3.4 Small Shape DP
+
+Phase 3.4.1 splitSLRCrossingNets
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+Phase 3.4.1 splitSLRCrossingNets | Checksum: 173c10916
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:42 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61216 ; free virtual = 67751
+Phase 3.4 Small Shape DP | Checksum: 24384d8c8
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:43 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61082 ; free virtual = 67617
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 24b3f17ef
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:43 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61082 ; free virtual = 67617
+Phase 3 Detail Placement | Checksum: 24b3f17ef
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:43 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61089 ; free virtual = 67624
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 243554318
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=8.318 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 222606a90
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.09 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 61070 ; free virtual = 67604
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1fc87b083
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.14 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 61069 ; free virtual = 67604
+Phase 4.1.1.1 BUFG Insertion | Checksum: 243554318
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:46 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61076 ; free virtual = 67611
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 243554318
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:46 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61076 ; free virtual = 67611
+INFO: [Place 30-746] Post Placement Timing Summary WNS=8.318. For the most accurate timing information please run report_timing.
+
+Phase 4.1.1.3 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=8.318. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Replication | Checksum: 1b37554ee
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:46 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61078 ; free virtual = 67613
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:46 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61083 ; free virtual = 67617
+Phase 4.1 Post Commit Optimization | Checksum: 1b37554ee
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:46 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61083 ; free virtual = 67617
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1b37554ee
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:58 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61060 ; free virtual = 67614
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1b37554ee
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:58 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61060 ; free virtual = 67614
+Phase 4.3 Placer Reporting | Checksum: 1b37554ee
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:58 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61060 ; free virtual = 67614
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 61060 ; free virtual = 67614
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:58 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61060 ; free virtual = 67614
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1747c188c
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:58 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61060 ; free virtual = 67614
+Ending Placer Task | Checksum: 10c1f776b
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:58 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61058 ; free virtual = 67612
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:02 . Memory (MB): peak = 6269.586 ; gain = 1334.164 ; free physical = 61433 ; free virtual = 67987
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.14 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 61431 ; free virtual = 67988
+INFO: [Common 17-1381] The checkpoint '/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file apskmod_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.51 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 61351 ; free virtual = 67908
+INFO: [runtcl-4] Executing : report_utilization -file apskmod_utilization_placed.rpt -pb apskmod_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file apskmod_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.14 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 61417 ; free virtual = 67975
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu37p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu37p'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+84 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.06 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 61380 ; free virtual = 67941
+INFO: [Common 17-1381] The checkpoint '/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu37p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu37p'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: d263d53e ConstDB: 0 ShapeSum: 39bba22d RouteDB: 0
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60958 ; free virtual = 67513
+WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "ap_start" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_start". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mod_datin_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mod_datin_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "modi_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "modi_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "modq_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "modq_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: cc520195
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60891 ; free virtual = 67464
+Post Restoration Checksum: NetGraph: ab06c1c5 NumContArr: 214b3fd0 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: cc520195
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60755 ; free virtual = 67328
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: cc520195
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60753 ; free virtual = 67326
+
+Phase 2.3 Global Clock Net Routing
+Phase 2.3 Global Clock Net Routing | Checksum: cc520195
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60785 ; free virtual = 67358
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1abfafc05
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60788 ; free virtual = 67361
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.432  | TNS=0.000  | WHS=0.037  | THS=0.000  |
+
+Phase 2 Router Initialization | Checksum: 19d7fcdd3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60781 ; free virtual = 67354
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 443
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 339
+  Number of Partially Routed Nets     = 104
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 19d7fcdd3
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60775 ; free virtual = 67346
+Phase 3 Initial Routing | Checksum: e9a05bf8
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60676 ; free virtual = 67246
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 88
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.647  | TNS=0.000  | WHS=0.046  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2160f7018
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60672 ; free virtual = 67238
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 19e7397d7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60672 ; free virtual = 67238
+Phase 4 Rip-up And Reroute | Checksum: 19e7397d7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60673 ; free virtual = 67239
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 19e7397d7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60671 ; free virtual = 67237
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 19e7397d7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60673 ; free virtual = 67239
+Phase 5 Delay and Skew Optimization | Checksum: 19e7397d7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60673 ; free virtual = 67239
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 14a7adda6
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60669 ; free virtual = 67235
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.647  | TNS=0.000  | WHS=0.046  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 14a7adda6
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60669 ; free virtual = 67235
+Phase 6 Post Hold Fix | Checksum: 14a7adda6
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60671 ; free virtual = 67237
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00168524 %
+  Global Horizontal Routing Utilization  = 0.00301617 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 16f36d989
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60661 ; free virtual = 67227
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 16f36d989
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60660 ; free virtual = 67226
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16f36d989
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60659 ; free virtual = 67225
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=7.647  | TNS=0.000  | WHS=0.046  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 16f36d989
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60671 ; free virtual = 67237
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:21 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60903 ; free virtual = 67469
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+98 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60898 ; free virtual = 67464
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.05 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60898 ; free virtual = 67467
+INFO: [Common 17-1381] The checkpoint '/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file apskmod_drc_routed.rpt -pb apskmod_drc_routed.pb -rpx apskmod_drc_routed.rpx
+Command: report_drc -file apskmod_drc_routed.rpt -pb apskmod_drc_routed.pb -rpx apskmod_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file apskmod_methodology_drc_routed.rpt -pb apskmod_methodology_drc_routed.pb -rpx apskmod_methodology_drc_routed.rpx
+Command: report_methodology -file apskmod_methodology_drc_routed.rpt -pb apskmod_methodology_drc_routed.pb -rpx apskmod_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file apskmod_power_routed.rpt -pb apskmod_power_summary_routed.pb -rpx apskmod_power_routed.rpx
+Command: report_power -file apskmod_power_routed.rpt -pb apskmod_power_summary_routed.pb -rpx apskmod_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+110 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60865 ; free virtual = 67434
+INFO: [runtcl-4] Executing : report_route_status -file apskmod_route_status.rpt -pb apskmod_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file apskmod_timing_summary_routed.rpt -pb apskmod_timing_summary_routed.pb -rpx apskmod_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file apskmod_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file apskmod_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6269.586 ; gain = 0.000 ; free physical = 60863 ; free virtual = 67429
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file apskmod_bus_skew_routed.rpt -pb apskmod_bus_skew_routed.pb -rpx apskmod_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 03:48:16 2021...
+[Tue Jun  8 03:48:22 2021] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:03:12 . Memory (MB): peak = 4716.543 ; gain = 0.000 ; free physical = 64507 ; free virtual = 71073
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4716.543 ; gain = 0.000 ; free physical = 64498 ; free virtual = 71064
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4740.555 ; gain = 0.000 ; free physical = 64305 ; free virtual = 70871
+Restored from archive | CPU: 0.040000 secs | Memory: 0.546288 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4740.555 ; gain = 0.000 ; free physical = 64305 ; free virtual = 70871
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4740.555 ; gain = 0.000 ; free physical = 64305 ; free virtual = 70871
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+Running report: report_route_status -file ./report/apskmod_status_routed.rpt
+Contents of report file './report/apskmod_status_routed.rpt' is as follows:
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :         630 :
+       # of nets not needing routing.......... :         187 :
+           # of internally routed nets........ :         107 :
+           # of implicitly routed ports....... :          80 :
+       # of routable nets..................... :         443 :
+           # of fully routed nets............. :         443 :
+       # of nets with routing errors.......... :           0 :
+   ------------------------------------------- : ----------- :
+
+
+Running report: report_timing -max_paths 10 -file ./report/apskmod_timing_paths_routed.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+Contents of report file './report/apskmod_timing_paths_routed.rpt' is as follows:
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date              : Tue Jun  8 03:48:27 2021
+| Host              : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command           : report_timing -max_paths 10 -file ./report/apskmod_timing_paths_routed.rpt
+| Design            : apskmod
+| Device            : xcvu37p-fsvh2892
+| Speed File        : -2L  PRODUCTION 1.28 05-08-2020
+| Temperature Grade : E
+-------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             7.647ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.333ns  (logic 0.563ns (24.132%)  route 1.770ns (75.868%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.182     1.591    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/A1
+    SLICE_X150Y460       RAMS64E (Prop_B6LUT_SLICEM_ADR1_O)
+                                                      0.125     1.716 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/RAMS64E_B/O
+                         net (fo=1, routed)           0.017     1.733    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/OB
+    SLICE_X150Y460       MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     1.793 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/F7.A/O
+                         net (fo=1, routed)           0.000     1.793    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/O1
+    SLICE_X150Y460       MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     1.821 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/F8/O
+                         net (fo=1, routed)           0.345     2.166    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4_n_0
+    SLICE_X148Y460       LUT6 (Prop_B6LUT_SLICEL_I5_O)
+                                                      0.148     2.314 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[5]_i_1/O
+                         net (fo=1, routed)           0.049     2.363    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[5]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_BFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.363    
+  -------------------------------------------------------------------
+                         slack                                  7.647    
+
+Slack (MET) :             7.665ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.315ns  (logic 0.502ns (21.685%)  route 1.813ns (78.315%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.317     1.726    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/A1
+    SLICE_X150Y460       RAMS64E (Prop_E6LUT_SLICEM_ADR1_O)
+                                                      0.124     1.850 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/O
+                         net (fo=1, routed)           0.012     1.862    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/OA
+    SLICE_X150Y460       MUXF7 (Prop_F7MUX_EF_SLICEM_I1_O)
+                                                      0.059     1.921 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/F7.A/O
+                         net (fo=1, routed)           0.000     1.921    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/O1
+    SLICE_X150Y460       MUXF8 (Prop_F8MUX_TOP_SLICEM_I1_O)
+                                                      0.028     1.949 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/F8/O
+                         net (fo=1, routed)           0.258     2.207    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3_n_0
+    SLICE_X147Y460       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.089     2.296 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[4]_i_1/O
+                         net (fo=1, routed)           0.049     2.345    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[4]
+    SLICE_X147Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X147Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X147Y460       FDRE (Setup_DFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[4]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.345    
+  -------------------------------------------------------------------
+                         slack                                  7.665    
+
+Slack (MET) :             7.757ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.223ns  (logic 0.539ns (24.247%)  route 1.684ns (75.753%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.234     1.643    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/A1
+    SLICE_X149Y458       RAMS64E (Prop_D6LUT_SLICEM_ADR1_O)
+                                                      0.122     1.765 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/RAMS64E_D/O
+                         net (fo=1, routed)           0.025     1.790    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/OD
+    SLICE_X149Y458       MUXF7 (Prop_F7MUX_CD_SLICEM_I0_O)
+                                                      0.062     1.852 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/F7.B/O
+                         net (fo=1, routed)           0.000     1.852    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/O0
+    SLICE_X149Y458       MUXF8 (Prop_F8MUX_BOT_SLICEM_I0_O)
+                                                      0.030     1.882 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6/F8/O
+                         net (fo=1, routed)           0.200     2.082    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__6_n_0
+    SLICE_X148Y460       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.123     2.205 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[7]_i_2/O
+                         net (fo=1, routed)           0.048     2.253    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[7]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_GFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[7]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.253    
+  -------------------------------------------------------------------
+                         slack                                  7.757    
+
+Slack (MET) :             7.793ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.187ns  (logic 0.512ns (23.411%)  route 1.675ns (76.589%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.234     1.643    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/A1
+    SLICE_X149Y458       RAMS64E (Prop_G6LUT_SLICEM_ADR1_O)
+                                                      0.123     1.766 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/RAMS64E_C/O
+                         net (fo=1, routed)           0.017     1.783    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/OC
+    SLICE_X149Y458       MUXF7 (Prop_F7MUX_GH_SLICEM_I1_O)
+                                                      0.060     1.843 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/F7.B/O
+                         net (fo=1, routed)           0.000     1.843    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/O0
+    SLICE_X149Y458       MUXF8 (Prop_F8MUX_TOP_SLICEM_I0_O)
+                                                      0.028     1.871 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5/F8/O
+                         net (fo=1, routed)           0.196     2.067    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__5_n_0
+    SLICE_X148Y460       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     2.166 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[6]_i_1/O
+                         net (fo=1, routed)           0.051     2.217    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[6]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_HFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[6]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.217    
+  -------------------------------------------------------------------
+                         slack                                  7.793    
+
+Slack (MET) :             7.935ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.045ns  (logic 0.440ns (21.516%)  route 1.605ns (78.484%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.436     0.545    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X145Y458       LUT4 (Prop_C5LUT_SLICEM_I1_O)
+                                                      0.099     0.644 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_6/O
+                         net (fo=50, routed)          0.871     1.515    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/A4
+    SLICE_X146Y461       RAMS64E (Prop_B6LUT_SLICEM_ADR4_O)
+                                                      0.052     1.567 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/RAMS64E_B/O
+                         net (fo=1, routed)           0.017     1.584    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/OB
+    SLICE_X146Y461       MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     1.644 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/F7.A/O
+                         net (fo=1, routed)           0.000     1.644    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/O1
+    SLICE_X146Y461       MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     1.672 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0/F8/O
+                         net (fo=1, routed)           0.232     1.904    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__0_n_0
+    SLICE_X148Y461       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.122     2.026 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[1]_i_1/O
+                         net (fo=1, routed)           0.049     2.075    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[1]
+    SLICE_X148Y461       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y461       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y461       FDRE (Setup_DFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.075    
+  -------------------------------------------------------------------
+                         slack                                  7.935    
+
+Slack (MET) :             7.970ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.010ns  (logic 0.448ns (22.289%)  route 1.562ns (77.711%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.183     1.592    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/A1
+    SLICE_X149Y459       RAMS64E (Prop_A6LUT_SLICEM_ADR1_O)
+                                                      0.125     1.717 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/RAMS64E_A/O
+                         net (fo=1, routed)           0.011     1.728    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/OA
+    SLICE_X149Y459       MUXF7 (Prop_F7MUX_AB_SLICEM_I1_O)
+                                                      0.058     1.786 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/F7.A/O
+                         net (fo=1, routed)           0.000     1.786    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/O1
+    SLICE_X149Y459       MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     1.814 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2/F8/O
+                         net (fo=1, routed)           0.141     1.955    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__2_n_0
+    SLICE_X148Y460       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     1.990 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[3]_i_1/O
+                         net (fo=1, routed)           0.050     2.040    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[3]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_CFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[3]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.040    
+  -------------------------------------------------------------------
+                         slack                                  7.970    
+
+Slack (MET) :             8.168ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/ADR1
+                            (rising edge-triggered cell RAMS64E clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.696ns  (logic 0.202ns (11.910%)  route 1.494ns (88.090%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.043ns = ( 10.043 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.317     1.726    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/A1
+    SLICE_X150Y460       RAMS64E                                      r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/ADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.043    10.043    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/WCLK
+    SLICE_X150Y460       RAMS64E                                      r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A/CLK
+                         clock pessimism              0.000    10.043    
+                         clock uncertainty           -0.035    10.008    
+    SLICE_X150Y460       RAMS64E (Setup_E6LUT_SLICEM_CLK_ADR1)
+                                                     -0.114     9.894    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__3/RAMS64E_A
+  -------------------------------------------------------------------
+                         required time                          9.894    
+                         arrival time                          -1.726    
+  -------------------------------------------------------------------
+                         slack                                  8.168    
+
+Slack (MET) :             8.205ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.775ns  (logic 0.517ns (29.127%)  route 1.258ns (70.873%))
+  Logic Levels:           4  (LUT4=1 LUT6=2 RAMS32=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          0.681     1.090    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_15_0_0__4/A1
+    SLICE_X149Y462       RAMS32 (Prop_F5LUT_SLICEM_ADR1_O)
+                                                      0.142     1.232 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_15_0_0__4/SP/O
+                         net (fo=1, routed)           0.212     1.444    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_15_0_0__4_n_0
+    SLICE_X148Y461       LUT6 (Prop_G6LUT_SLICEL_I2_O)
+                                                      0.123     1.567 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[2]_i_2/O
+                         net (fo=1, routed)           0.139     1.706    mod_tempin_U/apskmod_mod_tempin_ram_U/q0[2]_i_2_n_0
+    SLICE_X148Y460       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.050     1.756 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[2]_i_1/O
+                         net (fo=1, routed)           0.049     1.805    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[2]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_DFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -1.805    
+  -------------------------------------------------------------------
+                         slack                                  8.205    
+
+Slack (MET) :             8.238ns  (required time - arrival time)
+  Source:                 mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            regslice_both_modq_U/B_V_data_1_payload_B_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.696ns  (logic 0.900ns (53.066%)  route 0.796ns (46.934%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.056ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.076     0.076    mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ap_clk
+    RAMB18_X10Y183       RAMB18E2                                     r  mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X10Y183       RAMB18E2 (Prop_RAMB18E2_U_RAMB181_CLKARDCLK_DOUTADOUT[4])
+                                                      0.900     0.976 r  mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/DOUTADOUT[4]
+                         net (fo=2, routed)           0.796     1.772    regslice_both_modq_U/B_V_data_1_payload_A_reg[31]_0[4]
+    SLICE_X148Y462       FDRE                                         r  regslice_both_modq_U/B_V_data_1_payload_B_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    regslice_both_modq_U/ap_clk
+    SLICE_X148Y462       FDRE                                         r  regslice_both_modq_U/B_V_data_1_payload_B_reg[4]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y462       FDRE (Setup_EFF2_SLICEL_C_D)
+                                                      0.025    10.010    regslice_both_modq_U/B_V_data_1_payload_B_reg[4]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -1.772    
+  -------------------------------------------------------------------
+                         slack                                  8.238    
+
+Slack (MET) :             8.239ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg/DINADIN[4]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        1.474ns  (logic 0.245ns (16.621%)  route 1.229ns (83.379%))
+  Logic Levels:           2  (LUT2=1 LUT6=1)
+  Clock Path Skew:        0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.039ns = ( 10.039 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.272     0.381    mod_tempouti_U/apskmod_mod_tempouti_ram_U/Q[0]
+    SLICE_X146Y459       LUT2 (Prop_C5LUT_SLICEM_I0_O)
+                                                      0.068     0.449 r  mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg_i_39/O
+                         net (fo=62, routed)          0.675     1.124    mod_tempin_U/apskmod_mod_tempin_ram_U/p_68_in
+    SLICE_X148Y456       LUT6 (Prop_B6LUT_SLICEL_I2_O)
+                                                      0.098     1.222 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_i_22__0/O
+                         net (fo=1, routed)           0.282     1.504    mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg_0[4]
+    RAMB18_X10Y182       RAMB18E2                                     r  mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg/DINADIN[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.039    10.039    mod_tempouti_U/apskmod_mod_tempouti_ram_U/ap_clk
+    RAMB18_X10Y182       RAMB18E2                                     r  mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+                         clock pessimism              0.000    10.039    
+                         clock uncertainty           -0.035    10.004    
+    RAMB18_X10Y182       RAMB18E2 (Setup_RAMB18E2_L_RAMB180_CLKARDCLK_DINADIN[4])
+                                                     -0.261     9.743    mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg
+  -------------------------------------------------------------------
+                         required time                          9.743    
+                         arrival time                          -1.504    
+  -------------------------------------------------------------------
+                         slack                                  8.239    
+
+
+
+
+
+Running report: report_utilization -file ./report/apskmod_utilization_routed.rpt
+Contents of report file './report/apskmod_utilization_routed.rpt' is as follows:
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Jun  8 03:48:27 2021
+| Host         : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command      : report_utilization -file ./report/apskmod_utilization_routed.rpt
+| Design       : apskmod
+| Device       : xcvu37pfsvh2892-2L
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. CLB Logic
+1.1 Summary of Registers by Type
+2. CLB Logic Distribution
+3. BLOCKRAM
+4. ARITHMETIC
+5. I/O
+6. CLOCK
+7. ADVANCED
+8. CONFIGURATION
+9. Primitives
+10. Black Boxes
+11. Instantiated Netlists
+12. SLR Connectivity
+13. SLR Connectivity Matrix
+14. SLR CLB Logic and Dedicated Block Utilization
+15. SLR IO Utilization
+
+1. CLB Logic
+------------
+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| CLB LUTs                   |  242 |     0 |   1303680 |  0.02 |
+|   LUT as Logic             |  194 |     0 |   1303680 |  0.01 |
+|   LUT as Memory            |   48 |     0 |    600960 | <0.01 |
+|     LUT as Distributed RAM |   48 |     0 |           |       |
+|     LUT as Shift Register  |    0 |     0 |           |       |
+| CLB Registers              |  214 |     0 |   2607360 | <0.01 |
+|   Register as Flip Flop    |  214 |     0 |   2607360 | <0.01 |
+|   Register as Latch        |    0 |     0 |   2607360 |  0.00 |
+| CARRY8                     |    0 |     0 |    162960 |  0.00 |
+| F7 Muxes                   |   16 |     0 |    651840 | <0.01 |
+| F8 Muxes                   |    8 |     0 |    325920 | <0.01 |
+| F9 Muxes                   |    0 |     0 |    162960 |  0.00 |
++----------------------------+------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 1     |          Yes |         Set |            - |
+| 213   |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. CLB Logic Distribution
+-------------------------
+
++--------------------------------------------+------+-------+-----------+-------+
+|                  Site Type                 | Used | Fixed | Available | Util% |
++--------------------------------------------+------+-------+-----------+-------+
+| CLB                                        |   49 |     0 |    162960 |  0.03 |
+|   CLBL                                     |   20 |     0 |           |       |
+|   CLBM                                     |   29 |     0 |           |       |
+| LUT as Logic                               |  194 |     0 |   1303680 |  0.01 |
+|   using O5 output only                     |    5 |       |           |       |
+|   using O6 output only                     |  127 |       |           |       |
+|   using O5 and O6                          |   62 |       |           |       |
+| LUT as Memory                              |   48 |     0 |    600960 | <0.01 |
+|   LUT as Distributed RAM                   |   48 |     0 |           |       |
+|     using O5 output only                   |    0 |       |           |       |
+|     using O6 output only                   |   40 |       |           |       |
+|     using O5 and O6                        |    8 |       |           |       |
+|   LUT as Shift Register                    |    0 |     0 |           |       |
+| CLB Registers                              |  214 |     0 |   2607360 | <0.01 |
+|   Register driven from within the CLB      |   60 |       |           |       |
+|   Register driven from outside the CLB     |  154 |       |           |       |
+|     LUT in front of the register is unused |   78 |       |           |       |
+|     LUT in front of the register is used   |   76 |       |           |       |
+| Unique Control Sets                        |   17 |       |    325920 | <0.01 |
++--------------------------------------------+------+-------+-----------+-------+
+* * Note: Available Control Sets calculated as Slices * 2, Review the Control Sets Report for more information regarding control sets.
+
+
+3. BLOCKRAM
+-----------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |    1 |     0 |      2016 |  0.05 |
+|   RAMB36/FIFO*    |    0 |     0 |      2016 |  0.00 |
+|   RAMB18          |    2 |     0 |      4032 |  0.05 |
+|     RAMB18E2 only |    2 |       |           |       |
+| URAM              |    0 |     0 |       960 |  0.00 |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
+
+
+4. ARITHMETIC
+-------------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |      9024 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+5. I/O
+------
+
++------------------+------+-------+-----------+-------+
+|     Site Type    | Used | Fixed | Available | Util% |
++------------------+------+-------+-----------+-------+
+| Bonded IOB       |    0 |     0 |       624 |  0.00 |
+| HPIOB_M          |    0 |     0 |       288 |  0.00 |
+| HPIOB_S          |    0 |     0 |       288 |  0.00 |
+| HPIOB_SNGL       |    0 |     0 |        48 |  0.00 |
+| HPIOBDIFFINBUF   |    0 |     0 |       288 |  0.00 |
+| HPIOBDIFFOUTBUF  |    0 |     0 |       288 |  0.00 |
+| BITSLICE_CONTROL |    0 |     0 |        96 |  0.00 |
+| BITSLICE_RX_TX   |    0 |     0 |       624 |  0.00 |
+| BITSLICE_TX      |    0 |     0 |        96 |  0.00 |
+| RIU_OR           |    0 |     0 |        48 |  0.00 |
++------------------+------+-------+-----------+-------+
+
+
+6. CLOCK
+--------
+
++----------------------+------+-------+-----------+-------+
+|       Site Type      | Used | Fixed | Available | Util% |
++----------------------+------+-------+-----------+-------+
+| GLOBAL CLOCK BUFFERs |    0 |     0 |      1008 |  0.00 |
+|   BUFGCE             |    0 |     0 |       288 |  0.00 |
+|   BUFGCE_DIV         |    0 |     0 |        48 |  0.00 |
+|   BUFG_GT            |    0 |     0 |       576 |  0.00 |
+|   BUFGCTRL*          |    0 |     0 |        96 |  0.00 |
+| PLL                  |    0 |     0 |        24 |  0.00 |
+| MMCM                 |    0 |     0 |        12 |  0.00 |
++----------------------+------+-------+-----------+-------+
+* Note: Each used BUFGCTRL counts as two GLOBAL CLOCK BUFFERs. This table does not include global clocking resources, only buffer cell usage. See the Clock Utilization Report (report_clock_utilization) for detailed accounting of global clocking resource availability.
+
+
+7. ADVANCED
+-----------
+
++----------------------+------+-------+-----------+-------+
+|       Site Type      | Used | Fixed | Available | Util% |
++----------------------+------+-------+-----------+-------+
+| CMACE4               |    0 |     0 |         8 |  0.00 |
+| GTYE4_CHANNEL        |    0 |     0 |        96 |  0.00 |
+| GTYE4_COMMON         |    0 |     0 |        24 |  0.00 |
+| HBM_REF_CLK          |    0 |     0 |         2 |  0.00 |
+| HBM_SNGLBLI_INTF_APB |    0 |     0 |        32 |  0.00 |
+| HBM_SNGLBLI_INTF_AXI |    0 |     0 |        32 |  0.00 |
+| ILKNE4               |    0 |     0 |         4 |  0.00 |
+| OBUFDS_GTE4          |    0 |     0 |        48 |  0.00 |
+| OBUFDS_GTE4_ADV      |    0 |     0 |        48 |  0.00 |
+| PCIE40E4             |    0 |     0 |         2 |  0.00 |
+| PCIE4CE4             |    0 |     0 |         4 |  0.00 |
+| SYSMONE4             |    0 |     0 |         3 |  0.00 |
++----------------------+------+-------+-----------+-------+
+
+
+8. CONFIGURATION
+----------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |        12 |  0.00 |
+| DNA_PORTE2  |    0 |     0 |         3 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         3 |  0.00 |
+| FRAME_ECCE4 |    0 |     0 |         3 |  0.00 |
+| ICAPE3      |    0 |     0 |         6 |  0.00 |
+| MASTER_JTAG |    0 |     0 |         3 |  0.00 |
+| STARTUPE3   |    0 |     0 |         3 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+9. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     |  213 |            Register |
+| LUT6     |   98 |                 CLB |
+| LUT3     |   90 |                 CLB |
+| RAMS64E  |   40 |                 CLB |
+| LUT4     |   28 |                 CLB |
+| LUT5     |   22 |                 CLB |
+| RAMS32   |   16 |                 CLB |
+| MUXF7    |   16 |                 CLB |
+| LUT2     |   16 |                 CLB |
+| MUXF8    |    8 |                 CLB |
+| RAMB18E2 |    2 |            BLOCKRAM |
+| LUT1     |    2 |                 CLB |
+| FDSE     |    1 |            Register |
++----------+------+---------------------+
+
+
+10. Black Boxes
+---------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+11. Instantiated Netlists
+-------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+12. SLR Connectivity
+--------------------
+
++----------------------------------+------+-------+-----------+-------+
+|                                  | Used | Fixed | Available | Util% |
++----------------------------------+------+-------+-----------+-------+
+| SLR2 <-> SLR1                    |    0 |       |     23040 |  0.00 |
+|   SLR1 -> SLR2                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
+|   SLR2 -> SLR1                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
+| SLR1 <-> SLR0                    |    0 |       |     23040 |  0.00 |
+|   SLR0 -> SLR1                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
+|   SLR1 -> SLR0                   |    0 |       |           |  0.00 |
+|     Using TX_REG only            |    0 |     0 |           |       |
+|     Using RX_REG only            |    0 |     0 |           |       |
+|     Using Both TX_REG and RX_REG |    0 |     0 |           |       |
++----------------------------------+------+-------+-----------+-------+
+| Total SLLs Used                  |    0 |       |           |       |
++----------------------------------+------+-------+-----------+-------+
+
+
+13. SLR Connectivity Matrix
+---------------------------
+
++-----------+------+------+------+
+| FROM \ TO | SLR2 | SLR1 | SLR0 |
++-----------+------+------+------+
+| SLR2      |    0 |    0 |    0 |
+| SLR1      |    0 |    0 |    0 |
+| SLR0      |    0 |    0 |    0 |
++-----------+------+------+------+
+
+
+14. SLR CLB Logic and Dedicated Block Utilization
+-------------------------------------------------
+
++----------------------------+------+------+------+--------+--------+--------+
+|          Site Type         | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++----------------------------+------+------+------+--------+--------+--------+
+| CLB                        |    0 |   49 |    0 |   0.00 |   0.09 |   0.00 |
+|   CLBL                     |    0 |   20 |    0 |   0.00 |   0.07 |   0.00 |
+|   CLBM                     |    0 |   29 |    0 |   0.00 |   0.12 |   0.00 |
+| CLB LUTs                   |    0 |  242 |    0 |   0.00 |   0.06 |   0.00 |
+|   LUT as Logic             |    0 |  194 |    0 |   0.00 |   0.04 |   0.00 |
+|   LUT as Memory            |    0 |   48 |    0 |   0.00 |   0.02 |   0.00 |
+|     LUT as Distributed RAM |    0 |   48 |    0 |   0.00 |   0.02 |   0.00 |
+|     LUT as Shift Register  |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| CLB Registers              |    0 |  214 |    0 |   0.00 |   0.02 |   0.00 |
+| CARRY8                     |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F7 Muxes                   |    0 |   16 |    0 |   0.00 |  <0.01 |   0.00 |
+| F8 Muxes                   |    0 |    8 |    0 |   0.00 |  <0.01 |   0.00 |
+| F9 Muxes                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| Block RAM Tile             |    0 |    1 |    0 |   0.00 |   0.15 |   0.00 |
+|   RAMB36/FIFO              |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+|   RAMB18                   |    0 |    2 |    0 |   0.00 |   0.15 |   0.00 |
+| URAM                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| PLL                        |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| MMCM                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| Unique Control Sets        |    0 |   17 |    0 |   0.00 |   0.02 |   0.00 |
++----------------------------+------+------+------+--------+--------+--------+
+* Note: Available Control Sets based on CLB Registers / 8
+
+
+15. SLR IO Utilization
+----------------------
+
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+| SLR Index | Used IOBs | (%)IOBs | Used IPADs | (%)IPADs | Used OPADs | (%)OPADs | GTs |
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+| SLR2      |         0 |    0.00 |          0 |     0.00 |          0 |     0.00 |   0 |
+| SLR1      |         0 |    0.00 |          0 |     0.00 |          0 |     0.00 |   0 |
+| SLR0      |         0 |    0.00 |          0 |     0.00 |          0 |     0.00 |   0 |
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+| Total     |         0 |         |          0 |          |          0 |          |   0 |
++-----------+-----------+---------+------------+----------+------------+----------+-----+
+
+
+
+Running report: report_timing_summary -file ./report/apskmod_timing_routed.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Contents of report file './report/apskmod_timing_routed.rpt' is as follows:
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date              : Tue Jun  8 03:48:27 2021
+| Host              : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command           : report_timing_summary -file ./report/apskmod_timing_routed.rpt
+| Design            : apskmod
+| Device            : xcvu37p-fsvh2892
+| Speed File        : -2L  PRODUCTION 1.28 05-08-2020
+| Temperature Grade : E
+-----------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (13)
+6. checking no_output_delay (70)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (13)
+-------------------------------
+ There are 13 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (70)
+--------------------------------
+ There are 70 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      7.647        0.000                      0                  989        0.046        0.000                      0                  989        4.458        0.000                       0                   274  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
+-----   ------------       ----------      --------------
+ap_clk  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+ap_clk              7.647        0.000                      0                  989        0.046        0.000                      0                  989        4.458        0.000                       0                   274  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  ap_clk
+  To Clock:  ap_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.647ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.046ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.458ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.647ns  (required time - arrival time)
+  Source:                 ap_CS_fsm_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.333ns  (logic 0.563ns (24.132%)  route 1.770ns (75.868%))
+  Logic Levels:           5  (LUT4=1 LUT6=1 MUXF7=1 MUXF8=1 RAMS64E=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.020ns = ( 10.020 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.030     0.030    ap_clk
+    SLICE_X146Y458       FDRE                                         r  ap_CS_fsm_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y458       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     0.109 r  ap_CS_fsm_reg[3]/Q
+                         net (fo=22, routed)          0.177     0.286    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg[0]
+    SLICE_X146Y458       LUT4 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     0.409 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0_i_9/O
+                         net (fo=56, routed)          1.182     1.591    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/A1
+    SLICE_X150Y460       RAMS64E (Prop_B6LUT_SLICEM_ADR1_O)
+                                                      0.125     1.716 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/RAMS64E_B/O
+                         net (fo=1, routed)           0.017     1.733    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/OB
+    SLICE_X150Y460       MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     1.793 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/F7.A/O
+                         net (fo=1, routed)           0.000     1.793    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/O1
+    SLICE_X150Y460       MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     1.821 r  mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4/F8/O
+                         net (fo=1, routed)           0.345     2.166    mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg_0_255_0_0__4_n_0
+    SLICE_X148Y460       LUT6 (Prop_B6LUT_SLICEL_I5_O)
+                                                      0.148     2.314 r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0[5]_i_1/O
+                         net (fo=1, routed)           0.049     2.363    mod_tempin_U/apskmod_mod_tempin_ram_U/q00[5]
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.020    10.020    mod_tempin_U/apskmod_mod_tempin_ram_U/ap_clk
+    SLICE_X148Y460       FDRE                                         r  mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]/C
+                         clock pessimism              0.000    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X148Y460       FDRE (Setup_BFF_SLICEL_C_D)
+                                                      0.025    10.010    mod_tempin_U/apskmod_mod_tempin_ram_U/q0_reg[5]
+  -------------------------------------------------------------------
+                         required time                         10.010    
+                         arrival time                          -2.363    
+  -------------------------------------------------------------------
+                         slack                                  7.647    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.046ns  (arrival time - required time)
+  Source:                 k_reg_1324_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            k_reg_1324_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        0.098ns  (logic 0.053ns (54.082%)  route 0.045ns (45.918%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.006ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.018ns
+    Source Clock Delay      (SCD):    0.012ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.012     0.012    ap_clk
+    SLICE_X147Y456       FDRE                                         r  k_reg_1324_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X147Y456       FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.039     0.051 r  k_reg_1324_reg[0]/Q
+                         net (fo=7, routed)           0.029     0.080    regslice_both_modq_U/k_reg_1324_reg[0]
+    SLICE_X147Y456       LUT6 (Prop_D6LUT_SLICEL_I3_O)
+                                                      0.014     0.094 r  regslice_both_modq_U/k_reg_1324[0]_i_1/O
+                         net (fo=1, routed)           0.016     0.110    regslice_both_modq_U_n_7
+    SLICE_X147Y456       FDRE                                         r  k_reg_1324_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=273, unset)          0.018     0.018    ap_clk
+    SLICE_X147Y456       FDRE                                         r  k_reg_1324_reg[0]/C
+                         clock pessimism              0.000     0.018    
+    SLICE_X147Y456       FDRE (Hold_DFF_SLICEL_C_D)
+                                                      0.046     0.064    k_reg_1324_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.064    
+                         arrival time                           0.110    
+  -------------------------------------------------------------------
+                         slack                                  0.046    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         ap_clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { ap_clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     RAMB18E2/CLKARDCLK  n/a            1.569         10.000      8.431      RAMB18_X10Y183  mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+Low Pulse Width   Slow    RAMB18E2/CLKARDCLK  n/a            0.542         5.000       4.458      RAMB18_X10Y183  mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+High Pulse Width  Slow    RAMB18E2/CLKARDCLK  n/a            0.542         5.000       4.458      RAMB18_X10Y183  mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg/CLKARDCLK
+
+
+
+
+HLS: impl run complete: worst setup slack (WNS)=7.646644, worst hold slack (WHS)=0.046000, total pulse width slack(TPWS)=0.000000, number of unrouted nets=0
+HLS EXTRACTION: calculating BRAM count: (2 bram18) + 2 * (0 bram36)
+HLS EXTRACTION: impl area_totals:  0 1303680 2607360 9024 4032 {0 } 960
+HLS EXTRACTION: impl area_current: 0 242 214 0 2 0 0 49 0 960
+HLS EXTRACTION: generated /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/report/verilog/apskmod_export.xml
+
+
+Implementation tool: Xilinx Vivado v.2020.2
+Project:             apskmod
+Solution:            solution1
+Device target:       xcvu37p-fsvh2892-2L-e
+Report date:         Tue Jun 08 03:48:27 EDT 2021
+
+#=== Post-Implementation Resource usage ===
+CLB:             49
+LUT:            242
+FF:             214
+DSP:              0
+BRAM:             2
+SRL:              0
+URAM:             0
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    1.569
+CP achieved post-implementation:    2.353
+Timing met
+
+HLS EXTRACTION: generated /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/report/verilog/apskmod_export.rpt
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 03:48:27 2021...

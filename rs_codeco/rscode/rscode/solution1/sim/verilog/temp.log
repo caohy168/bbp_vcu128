@@ -1,0 +1,131 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_encode_rs_top glbl -prj encode_rs.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s encode_rs -debug wave 
+Multi-threading is on. Using 34 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/AESL_automem_index_of_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_index_of_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/AESL_axi_s_recd_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_recd_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_alpha_to.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_alpha_to_ram
+INFO: [VRFC 10-311] analyzing module encode_rs_alpha_to
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/AESL_axi_s_data_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_data_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_index_of.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_index_of_ram
+INFO: [VRFC 10-311] analyzing module encode_rs_index_of
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_gg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_gg_ram
+INFO: [VRFC 10-311] analyzing module encode_rs_gg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_srem_10ns_9ns_8_14_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_10ns_9ns_8_14_seq_1_div_u
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_10ns_9ns_8_14_seq_1_div
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_10ns_9ns_8_14_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_srem_32ns_9ns_8_36_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_32ns_9ns_8_36_1_div_u
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_32ns_9ns_8_36_1_div
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_32ns_9ns_8_36_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_encode_rs_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_data_ram
+INFO: [VRFC 10-311] analyzing module encode_rs_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_srem_10ns_9ns_8_14_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_10ns_9ns_8_14_1_div_u
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_10ns_9ns_8_14_1_div
+INFO: [VRFC 10-311] analyzing module encode_rs_srem_10ns_9ns_8_14_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_regslice_both
+INFO: [VRFC 10-311] analyzing module encode_rs_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/AESL_automem_bb_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_bb_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/encode_rs_bb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode_rs_bb_ram
+INFO: [VRFC 10-311] analyzing module encode_rs_bb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/AESL_automem_alpha_to_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_alpha_to_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/AESL_automem_gg_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_gg_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/nodf_module_interface.sv:4]
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.encode_rs_alpha_to_ram
+Compiling module xil_defaultlib.encode_rs_alpha_to(DataWidth=32,...
+Compiling module xil_defaultlib.encode_rs_index_of_ram
+Compiling module xil_defaultlib.encode_rs_index_of(DataWidth=9,A...
+Compiling module xil_defaultlib.encode_rs_gg_ram
+Compiling module xil_defaultlib.encode_rs_gg(DataWidth=32,Addres...
+Compiling module xil_defaultlib.encode_rs_data_ram
+Compiling module xil_defaultlib.encode_rs_data(DataWidth=8,Addre...
+Compiling module xil_defaultlib.encode_rs_bb_ram
+Compiling module xil_defaultlib.encode_rs_bb(DataWidth=32,Addres...
+Compiling module xil_defaultlib.encode_rs_srem_10ns_9ns_8_14_1_d...
+Compiling module xil_defaultlib.encode_rs_srem_10ns_9ns_8_14_1_d...
+Compiling module xil_defaultlib.encode_rs_srem_10ns_9ns_8_14_1(I...
+Compiling module xil_defaultlib.encode_rs_srem_10ns_9ns_8_14_seq...
+Compiling module xil_defaultlib.encode_rs_srem_10ns_9ns_8_14_seq...
+Compiling module xil_defaultlib.encode_rs_srem_10ns_9ns_8_14_seq...
+Compiling module xil_defaultlib.encode_rs_srem_32ns_9ns_8_36_1_d...
+Compiling module xil_defaultlib.encode_rs_srem_32ns_9ns_8_36_1_d...
+Compiling module xil_defaultlib.encode_rs_srem_32ns_9ns_8_36_1(I...
+Compiling module xil_defaultlib.encode_rs_regslice_both
+Compiling module xil_defaultlib.encode_rs
+Compiling module xil_defaultlib.AESL_automem_bb_out
+Compiling module xil_defaultlib.AESL_automem_alpha_to_out
+Compiling module xil_defaultlib.AESL_automem_index_of_out
+Compiling module xil_defaultlib.AESL_automem_gg_out
+Compiling module xil_defaultlib.fifo(DEPTH=235,WIDTH=32)
+Compiling module xil_defaultlib.AESL_axi_s_data_in
+Compiling module xil_defaultlib.fifo(DEPTH=255,WIDTH=32)
+Compiling module xil_defaultlib.AESL_axi_s_recd_out
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_encode_rs_top
+Compiling module work.glbl
+Built simulation snapshot encode_rs
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/sim/verilog/xsim.dir/encode_rs/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug  3 04:46:45 2021...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+start_gui
+INFO: [Common 17-206] Exiting xsim at Tue Aug  3 04:56:46 2021...

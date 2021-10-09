@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1.1 (64-bit)
+# SW Build 3286242 on Wed Jul 28 13:09:46 MDT 2021
+# IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
+# Start of session at: Thu Aug 26 04:13:50 2021
+# Process ID: 175133
+# Current directory: /home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/axis_fifo_t_synth_1
+# Command line: vivado -log axis_fifo_t.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_fifo_t.tcl
+# Log file: /home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/axis_fifo_t_synth_1/axis_fifo_t.vds
+# Journal file: /home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/axis_fifo_t_synth_1/vivado.jou
+#-----------------------------------------------------------
+source axis_fifo_t.tcl -notrace

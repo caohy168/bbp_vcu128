@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/rscode/solution1/./sim/autowrap/testbench/rscode.cpp_pre.cpp.tb.cpp

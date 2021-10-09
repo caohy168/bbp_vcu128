@@ -1,0 +1,2 @@
+dds_125m_q.vhd,vhdl,xil_defaultlib,../../../ip/dds_125m_q/sim/dds_125m_q.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

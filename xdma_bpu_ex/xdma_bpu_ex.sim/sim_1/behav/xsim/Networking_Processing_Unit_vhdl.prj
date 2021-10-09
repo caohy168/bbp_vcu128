@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../xdma_bpu_ex.gen/sources_1/ip/sub_ddc/sim/sub_ddc.vhd" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/mult_gen_ddc/sim/mult_gen_ddc.vhd" \
+"../../../../xdma_bpu_ex.gen/sources_1/ip/add_ddc/sim/add_ddc.vhd" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/dds_rq/sim/dds_rq.vhd" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/dds_ri/sim/dds_ri.vhd" \
+"../../../../xdma_bpu_ex.gen/sources_1/ip/add_duc/sim/add_duc.vhd" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/mult_gen_duc/sim/mult_gen_duc.vhd" \
+"../../../../xdma_bpu_ex.gen/sources_1/ip/sub_duc/sim/sub_duc.vhd" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/dds_125m_q/sim/dds_125m_q.vhd" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/dds_125m_i/sim/dds_125m_i.vhd" \
+
+# Do not sort compile order
+nosort

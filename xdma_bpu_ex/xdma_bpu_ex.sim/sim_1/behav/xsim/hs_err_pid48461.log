@@ -1,0 +1,19 @@
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x3f040) [0x7ff4dc054040]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7ff4dc053fb7]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7ff4dc055921]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/Ubuntu/18/libstdc++.so.6(+0x8c8fb) [0x7ff4dc6a88fb]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/Ubuntu/18/libstdc++.so.6(+0x92d3a) [0x7ff4dc6aed3a]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/Ubuntu/18/libstdc++.so.6(+0x92d95) [0x7ff4dc6aed95]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/Ubuntu/18/libstdc++.so.6(+0x93bd3) [0x7ff4dc6afbd3]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::findVisibleDataObj(SimBridge::BlockObj const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0xfe) [0x7ff4921a8cce]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::getDataObj(SimBridge::BlockObj const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int*) const+0x5be) [0x7ff4921b094e]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::getDataObj(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int*) const+0x430) [0x7ff4921b0ec0]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataReader::getDataObj(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int*) const+0x3c) [0x7ff4921b8e1c]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/librdi_simdata.so(RSDData::RSDCommonSimulationObject::getCodeTooltipValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, bool) const+0x6a) [0x7ff498be88fa]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/librdi_simdata.so(RSDExecutive::getCodeTooltipValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, bool) const+0x74) [0x7ff498c081d4]
+/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/librdi_simdata.so(Java_ui_views_simulator_executive_simulationi_SimulationExecutive_1getCodeTooltipValue+0x1bb) [0x7ff498c80b4b]
+[0x7ff4711167a8]

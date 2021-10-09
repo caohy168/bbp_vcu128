@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="encode_rs" xd:componentRef="encode_rs" xd:initiationInterval="16627" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="data_in" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="recd_out" xd:originalName="recd_out" xd:direction="out" xd:interfaceRef="recd_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="bb_out_d0" xd:originalName="bb_out_d0" xd:direction="out" xd:interfaceRef="bb_out_d0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="alpha_to_out_d0" xd:originalName="alpha_to_out_d0" xd:direction="out" xd:interfaceRef="alpha_to_out_d0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="index_of_out_d0" xd:originalName="index_of_out_d0" xd:direction="out" xd:interfaceRef="index_of_out_d0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="gg_out_d0" xd:originalName="gg_out_d0" xd:direction="out" xd:interfaceRef="gg_out_d0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="11211" xd:worst-case="16626" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="39523" xd:FF="49310" xd:BRAM="2" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,16 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date              : Tue Jun  8 03:48:16 2021
+| Host              : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command           : report_bus_skew -warn_on_violation -file apskmod_bus_skew_routed.rpt -pb apskmod_bus_skew_routed.pb -rpx apskmod_bus_skew_routed.rpx
+| Design            : apskmod
+| Device            : xcvu37p-fsvh2892
+| Speed File        : -2L  PRODUCTION 1.28 05-08-2020
+| Temperature Grade : E
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

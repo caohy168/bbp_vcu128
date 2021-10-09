@@ -1,0 +1,81 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "encode_rs",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "encode_rs"
+              }]
+          }
+        },
+        {
+          "functionName": "encode_rs",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "recd_out"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "encode_rs",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "data_in"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "encode_rs",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "encode_rs"
+              }]
+          }
+        }
+      ]
+    }]}

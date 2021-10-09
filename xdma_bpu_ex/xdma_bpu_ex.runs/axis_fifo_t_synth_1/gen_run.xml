@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="axis_fifo_t_synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1629965627">
+  <File Type="REPORTS-TCL" Name="axis_fifo_t_reports.tcl"/>
+  <File Type="PA-TCL" Name="axis_fifo_t.tcl"/>
+  <File Type="RDS-DCP" Name="axis_fifo_t.dcp"/>
+  <File Type="RDS-RDS" Name="axis_fifo_t.vds"/>
+  <File Type="RDS-UTIL" Name="axis_fifo_t_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="axis_fifo_t_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axis_fifo_t">
+    <File Path="$PPRDIR/imports/bbp/transmit/axis_fifo_t/axis_fifo_t.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/transmit/axis_fifo_t/axis_fifo_t.xci"/>
+        <Attr Name="ImportTime" Val="1629956452"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/bbp/transmit/axis_fifo_t.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axis_fifo_t"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axis_fifo_t">
+    <File Path="$PPRDIR/imports/bbp/transmit/axis_fifo_t/axis_fifo_t.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/transmit/axis_fifo_t/axis_fifo_t.xci"/>
+        <Attr Name="ImportTime" Val="1629956452"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/bbp/transmit/axis_fifo_t.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axis_fifo_t"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

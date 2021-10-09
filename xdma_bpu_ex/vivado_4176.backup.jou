@@ -1,0 +1,205 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Sep 30 00:20:12 2021
+# Process ID: 4176
+# Current directory: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex
+# Command line: vivado xdma_bpu_ex.xpr
+# Log file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.log
+# Journal file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project xdma_bpu_ex.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/board_behav.wcfg
+source Networking_Processing_Unit.tcl
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].inter2 }} 
+restart
+run all
+relaunch_sim
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc }} 
+restart
+run all
+relaunch_sim
+relaunch_sim
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc }} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc }} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /aclk}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /reset}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataI_tready}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataQ_tready}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_Q}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /aclk}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /reset}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tvalid_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tvalid_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tready_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tready_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tvalid_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tvalid_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tlast_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tlast_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tdata_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tdata_ddc_Q}} 
+set_property -dict [list CONFIG.DDS_Clock_Rate {500} CONFIG.Noise_Shaping {None} CONFIG.Phase_Width {16} CONFIG.Output_Frequency1 {0}] [get_ips dds_125m_i]
+generate_target all [get_files  /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci]
+catch { config_ip_cache -export [get_ips -all dds_125m_i] }
+export_ip_user_files -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci]
+launch_runs dds_125m_i_synth_1 -jobs 32
+wait_on_run dds_125m_i_synth_1
+export_simulation -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci] -directory /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files -ipstatic_source_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/modelsim} {questa=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/questa} {ies=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/ies} {xcelium=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/xcelium} {vcs=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/vcs} {riviera=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.DDS_Clock_Rate {500} CONFIG.Noise_Shaping {None} CONFIG.Phase_Width {16} CONFIG.Output_Frequency1 {0}] [get_ips dds_125m_q]
+generate_target all [get_files  /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci]
+catch { config_ip_cache -export [get_ips -all dds_125m_q] }
+export_ip_user_files -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci]
+launch_runs dds_125m_q_synth_1 -jobs 32
+wait_on_run dds_125m_q_synth_1
+export_simulation -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci] -directory /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files -ipstatic_source_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/modelsim} {questa=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/questa} {ies=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/ies} {xcelium=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/xcelium} {vcs=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/vcs} {riviera=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.DDS_Clock_Rate {500} CONFIG.Noise_Shaping {None} CONFIG.Phase_Width {16} CONFIG.Output_Frequency1 {0}] [get_ips dds_ri]
+generate_target all [get_files  /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci]
+catch { config_ip_cache -export [get_ips -all dds_ri] }
+export_ip_user_files -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci]
+launch_runs dds_ri_synth_1 -jobs 32
+wait_on_run dds_ri_synth_1
+export_simulation -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci] -directory /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files -ipstatic_source_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/modelsim} {questa=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/questa} {ies=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/ies} {xcelium=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/xcelium} {vcs=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/vcs} {riviera=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.DDS_Clock_Rate {500} CONFIG.Noise_Shaping {None} CONFIG.Phase_Width {16} CONFIG.Output_Frequency1 {0}] [get_ips dds_rq]
+generate_target all [get_files  /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq.xci]
+catch { config_ip_cache -export [get_ips -all dds_rq] }
+export_ip_user_files -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq.xci]
+launch_runs dds_rq_synth_1 -jobs 32
+wait_on_run dds_rq_synth_1
+export_simulation -of_objects [get_files /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq.xci] -directory /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files -ipstatic_source_dir /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/modelsim} {questa=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/questa} {ies=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/ies} {xcelium=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/xcelium} {vcs=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/vcs} {riviera=/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /dds_ri}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tvalid_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tvalid_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_Q}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /ram_cos}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /ram_sin}} 
+relaunch_sim
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /mult_duc_sincos}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataI_tready}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataQ_tready}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_Q}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /mult_duc_coscos}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /ram_cos}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].inter2 }} 
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /cos_sub_result}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /sin_add_result}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /cos_sub_result16}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /sin_add_result16}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_I1}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_I2}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_I3}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_Q1}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_Q2}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_Q3}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_I1}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_I2}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_I3}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_Q1}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_Q2}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_Q3}} 
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /ram_cos1}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /ram_sin1}} 
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /cos_sub_result16}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /sin_add_result16}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /vco_phasei_valid}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /mult_cnt}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /vco_phaseq_valid}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_I}} 
+relaunch_sim
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_cnt}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_I}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+log_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tdata_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tdata_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tready_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tready_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tlast_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tlast_ddc_Q}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tdata_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tdata_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tready_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tready_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tready_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tlast_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /m_axis_data_tlast_ddc_Q}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /mult_ddc_coscos}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /ram_cos}} 
+restart
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /ram_sin}} 
+restart
+run all
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc }} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tready_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tready_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tvalid_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /s_axis_data_tvalid_Q}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tdata_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tdata_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tlast_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tlast_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tready_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tready_ddc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tvalid_ddc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[2].ddc /m_axis_data_tvalid_ddc_Q}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataQ_tready}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataI_tready}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_I}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /mult_ddc_coscos}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /cos_add_result}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /sin_sub_result}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /cos_add_result8}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /sin_sub_result8}} 
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_I}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_Q}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /s_axis_data_tdata_I}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /cos_add_result8}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /sin_sub_result8}} 
+save_wave_config {/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/board_behav.wcfg}
+close_sim

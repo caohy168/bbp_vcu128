@@ -1,0 +1,95 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../imports/bbp/parameters" --include "../../../../imports/bbp/transmit/pcieroot" --include "../../../../imports/bbp/receive/pcieroot" --include "../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl" --include "../../../../xdma_bpu_ex.srcs/sources_1/ip/bbp_mmc" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_alpha_to.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_d.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_elp.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_gg.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_index_of.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_l.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_loc.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_mac_muladd_9ns_4ns_9s_14_4_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_recd.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_reg.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_regslice_both.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_root.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_s.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_srem_10ns_9ns_8_14_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_srem_10ns_9ns_8_14_seq_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_srem_11ns_9ns_8_15_seq_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_srem_14s_9ns_8_18_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_srem_32ns_9ns_8_36_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_srem_32ns_9ns_9_36_seq_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_srem_32ns_9ns_32_36_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_u_lu.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_urem_10ns_9ns_10_14_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs_z.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs.v" \
+"../../../../xdma_bpu_ex.gen/sources_1/ip/decoders/sim/decoders.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/ddc_out_fifo/sim/ddc_out_fifo.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/axis_fifo_t8/sim/axis_fifo_t8.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/axis_fifo_t/sim/axis_fifo_t.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/duc_out_fifo/sim/duc_out_fifo.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_alpha_to.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_bb.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_data.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_gg.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_index_of.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_regslice_both.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_srem_10ns_9ns_8_14_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_srem_10ns_9ns_8_14_seq_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_srem_32ns_9ns_8_36_1.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs.v" \
+"../../../../xdma_bpu_ex.gen/sources_1/ip/encoders/sim/encoders.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/bbp_mmc/bbp_mmc_clk_wiz.v" \
+"../../../../xdma_bpu_ex.ip_user_files/ip/bbp_mmc/bbp_mmc.v" \
+"../../../../imports/bbp/transmit/crc24_calc_1bit.v" \
+"../../../../imports/bbp/transmit/crc24_insert_1bit.v" \
+"../../../../imports/sys_clk_gen.v" \
+"../../../../imports/sys_clk_gen_ds.v" \
+
+sv xil_defaultlib  --include "../../../../imports/bbp/parameters" --include "../../../../imports/bbp/transmit/pcieroot" --include "../../../../imports/bbp/receive/pcieroot" --include "../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl" --include "../../../../xdma_bpu_ex.srcs/sources_1/ip/bbp_mmc" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/baseband_processor.sv" \
+"../../../../imports/bbp/receive/bbp_receive.sv" \
+"../../../../imports/bbp/transmit/bbp_transmit.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/channel_codes.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/channel_decodes.sv" \
+"../../../../imports/bbp/receive/crc_detector.sv" \
+"../../../../imports/bbp/transmit/crc_generator.sv" \
+"../../../../imports/bbp/receive/data_transfer.sv" \
+"../../../../imports/bbp/transmit/datastream_transfer.sv" \
+"../../../../imports/bbp/receive/ddc.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/decimation.sv" \
+"../../../../imports/bbp/receive/deintrlv.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/demodulation.sv" \
+"../../../../imports/bbp/receive/descrambler.sv" \
+"../../../../imports/bbp/transmit/duc.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/energy_balance.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/energy_debalance.sv" \
+"../../../../imports/bbp/receive/eqam.sv" \
+"../../../../imports/bbp/transmit/interleaver.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/interpolation.sv" \
+"../../../../imports/bbp/receive/layer1_pull.sv" \
+"../../../../imports/bbp/transmit/layer1_push.sv" \
+"../../../../imports/bbp/receive/layer1_receive.sv" \
+"../../../../imports/bbp/transmit/layer1_transmit.sv" \
+"../../../../imports/bbp/transmit/mac_block.sv" \
+"../../../../imports/bbp/receive/mac_deblock.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/modulation.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/package_gen.sv" \
+"../../../../imports/bbp/transmit/qam.sv" \
+"../../../../imports/bbp/receive/radio_pull.sv" \
+"../../../../imports/bbp/transmit/radio_push.sv" \
+"../../../../imports/bbp/receive/radio_receive.sv" \
+"../../../../imports/bbp/transmit/radio_transmit.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/rs_decoder_self.sv" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/rs_encoder_self.sv" \
+"../../../../imports/bbp/transmit/scrambler.sv" \
+"../../../../imports/bbp/receive/tpu_pullstream.sv" \
+"../../../../imports/bbp/transmit/tpu_pushstream.sv" \
+"../../../../imports/Networking_Processing_Unit.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

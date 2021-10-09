@@ -1,0 +1,7 @@
+Running: xsim.dir/apskmod/xsimk -simmode gui -wdb apskmod.wdb -simrunnum 0 -socket 36153
+Design successfully loaded
+Design Loading Memory Usage: 34212 KB (Peak: 34212 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 124920 KB (Peak: 173480 KB)
+Simulation CPU Usage: 50 ms

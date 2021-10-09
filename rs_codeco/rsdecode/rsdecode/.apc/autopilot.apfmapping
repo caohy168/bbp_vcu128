@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="rsdecode.cpp" path="/home/caohy168/Work/bbp_vcu128/rs_codeco/rsdecode/rsdecode.cpp"/>
+    <originFiles name="rsdecode.h" path="/home/caohy168/Work/bbp_vcu128/rs_codeco/rsdecode/rsdecode.h"/>
+  </source>
+  <testbench>
+    <originFiles name="rsdecode_inspire.cpp" path="/home/caohy168/Work/bbp_vcu128/rs_codeco/rsdecode/rsdecode_inspire.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

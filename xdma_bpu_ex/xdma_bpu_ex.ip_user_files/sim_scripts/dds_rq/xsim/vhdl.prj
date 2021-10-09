@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../ip/dds_rq/sim/dds_rq.vhd" \
+
+nosort

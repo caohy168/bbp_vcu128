@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="dds_ri_synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1632996685">
+  <File Type="REPORTS-TCL" Name="dds_ri_reports.tcl"/>
+  <File Type="PA-TCL" Name="dds_ri.tcl"/>
+  <File Type="RDS-DCP" Name="dds_ri.dcp"/>
+  <File Type="RDS-RDS" Name="dds_ri.vds"/>
+  <File Type="RDS-UTIL" Name="dds_ri_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="dds_ri_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dds_ri">
+    <File Path="$PPRDIR/imports/bbp/receive/dds_ri/dds_ri.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/receive/dds_ri/dds_ri.xci"/>
+        <Attr Name="ImportTime" Val="1629956472"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/bbp/receive/dds_ri.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dds_ri"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dds_ri">
+    <File Path="$PPRDIR/imports/bbp/receive/dds_ri/dds_ri.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/receive/dds_ri/dds_ri.xci"/>
+        <Attr Name="ImportTime" Val="1629956472"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/bbp/receive/dds_ri.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dds_ri"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

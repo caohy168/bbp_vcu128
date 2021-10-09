@@ -1,0 +1,19 @@
+
+*** Running vivado
+    with args -log duc_out_fifo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source duc_out_fifo.tcl
+
+
+****** Vivado v2021.1.1 (64-bit)
+  **** SW Build 3286242 on Wed Jul 28 13:09:46 MDT 2021
+  **** IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source duc_out_fifo.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskmod'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/rscodeco/rsdecode'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/rscodeco/rscode'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskdemod'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP duc_out_fifo, cache-ID = 6917367a26a9f8b9.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 26 04:14:47 2021...

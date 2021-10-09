@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Networking_Processing_Unit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Networking_Processing_Unit" />
+            <top_module name="\$unit_baseband_processor_sv " />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="353,122.790 ns"></ZoomStartTime>
+      <ZoomEndTime time="353,146.263 ns"></ZoomEndTime>
+      <Cursor1Time time="353,137.115 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="238"></NameColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="50" />
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tdata_gen">
+      <obj_property name="ElementShortName">axis_tdata_gen[63:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tdata_gen[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tlast_gen">
+      <obj_property name="ElementShortName">axis_tlast_gen</obj_property>
+      <obj_property name="ObjectShortName">axis_tlast_gen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tuser_gen">
+      <obj_property name="ElementShortName">axis_tuser_gen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tuser_gen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tkeep_gen">
+      <obj_property name="ElementShortName">axis_tkeep_gen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tkeep_gen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tvalid_gen">
+      <obj_property name="ElementShortName">axis_tvalid_gen</obj_property>
+      <obj_property name="ObjectShortName">axis_tvalid_gen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tdata_che">
+      <obj_property name="ElementShortName">axis_tdata_che[63:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tdata_che[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tlast_che">
+      <obj_property name="ElementShortName">axis_tlast_che</obj_property>
+      <obj_property name="ObjectShortName">axis_tlast_che</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tuser_che">
+      <obj_property name="ElementShortName">axis_tuser_che[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tuser_che[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tkeep_che">
+      <obj_property name="ElementShortName">axis_tkeep_che[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tkeep_che[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/axis_tvalid_che">
+      <obj_property name="ElementShortName">axis_tvalid_che</obj_property>
+      <obj_property name="ObjectShortName">axis_tvalid_che</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tvalid_8">
+      <obj_property name="ElementShortName">s_axis_inputI_tvalid_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputI_tvalid_8[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tready_8">
+      <obj_property name="ElementShortName">s_axis_inputI_tready_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputI_tready_8[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8">
+      <obj_property name="ElementShortName">s_axis_inputI_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputI_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[0]">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[1]">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[2]">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[3]">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[4]">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[5]">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[6]">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tdata_8[7]">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputI_tlast_8">
+      <obj_property name="ElementShortName">s_axis_inputI_tlast_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputI_tlast_8[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tvalid_8">
+      <obj_property name="ElementShortName">s_axis_inputQ_tvalid_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputQ_tvalid_8[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tready_8">
+      <obj_property name="ElementShortName">s_axis_inputQ_tready_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputQ_tready_8[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8">
+      <obj_property name="ElementShortName">s_axis_inputQ_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputQ_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[0]">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[1]">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[2]">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[3]">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[4]">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[5]">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[6]">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tdata_8[7]">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/s_axis_inputQ_tlast_8">
+      <obj_property name="ElementShortName">s_axis_inputQ_tlast_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_inputQ_tlast_8[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/eqam_data">
+      <obj_property name="ElementShortName">eqam_data[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">eqam_data[0:7][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/eqam_data_tvalid">
+      <obj_property name="ElementShortName">eqam_data_tvalid[0:7]</obj_property>
+      <obj_property name="ObjectShortName">eqam_data_tvalid[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/eqam_data_tlast">
+      <obj_property name="ElementShortName">eqam_data_tlast[0:7]</obj_property>
+      <obj_property name="ObjectShortName">eqam_data_tlast[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/layer1_pullsteam/layer1_receive/descrambler_tready">
+      <obj_property name="ElementShortName">descrambler_tready[0:7]</obj_property>
+      <obj_property name="ObjectShortName">descrambler_tready[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tvalid_8">
+      <obj_property name="ElementShortName">m_axis_outputI_tvalid_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputI_tvalid_8[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tready_8">
+      <obj_property name="ElementShortName">m_axis_outputI_tready_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputI_tready_8[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8">
+      <obj_property name="ElementShortName">m_axis_outputI_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputI_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[0]">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[1]">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[2]">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[3]">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[4]">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[5]">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[6]">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tdata_8[7]">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputI_tlast_8">
+      <obj_property name="ElementShortName">m_axis_outputI_tlast_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputI_tlast_8[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tvalid_8">
+      <obj_property name="ElementShortName">m_axis_outputQ_tvalid_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputQ_tvalid_8[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tready_8">
+      <obj_property name="ElementShortName">m_axis_outputQ_tready_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputQ_tready_8[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8">
+      <obj_property name="ElementShortName">m_axis_outputQ_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputQ_tdata_8[0:7][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[0]">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[1]">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[2]">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[3]">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[4]">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[5]">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[6]">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tdata_8[7]">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/m_axis_outputQ_tlast_8">
+      <obj_property name="ElementShortName">m_axis_outputQ_tlast_8[0:7]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_outputQ_tlast_8[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/scrambler_data">
+      <obj_property name="ElementShortName">scrambler_data[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">scrambler_data[0:7][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/scrambler_tvalid">
+      <obj_property name="ElementShortName">scrambler_tvalid[0:7]</obj_property>
+      <obj_property name="ObjectShortName">scrambler_tvalid[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/scrambler_tlast">
+      <obj_property name="ElementShortName">scrambler_tlast[0:7]</obj_property>
+      <obj_property name="ObjectShortName">scrambler_tlast[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/layer1_pushstream/layer1_transmit/modulate_tready">
+      <obj_property name="ElementShortName">modulate_tready[0:7]</obj_property>
+      <obj_property name="ObjectShortName">modulate_tready[0:7]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tready_I">
+      <obj_property name="ElementShortName">m_axis_data_tready_I</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tready_I</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tready_Q">
+      <obj_property name="ElementShortName">m_axis_data_tready_Q</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tready_Q</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/clk_250m">
+      <obj_property name="ElementShortName">clk_250m</obj_property>
+      <obj_property name="ObjectShortName">clk_250m</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /clk_250m">
+      <obj_property name="ElementShortName">clk_250m</obj_property>
+      <obj_property name="ObjectShortName">clk_250m</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tvalid_I">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_I</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_I</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tvalid_Q">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_Q</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_Q</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tlast_I">
+      <obj_property name="ElementShortName">m_axis_data_tlast_I</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast_I</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tlast_Q">
+      <obj_property name="ElementShortName">m_axis_data_tlast_Q</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast_Q</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tdata_I">
+      <obj_property name="ElementShortName">m_axis_data_tdata_I[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_I[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tdata_Q">
+      <obj_property name="ElementShortName">m_axis_data_tdata_Q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_Q[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tvalid_Ineg">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_Ineg</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_Ineg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tvalid_Qneg">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_Qneg</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_Qneg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tlast_Ineg">
+      <obj_property name="ElementShortName">m_axis_data_tlast_Ineg</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast_Ineg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tlast_Qneg">
+      <obj_property name="ElementShortName">m_axis_data_tlast_Qneg</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast_Qneg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tdata_Ineg">
+      <obj_property name="ElementShortName">m_axis_data_tdata_Ineg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_Ineg[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].decimation /m_axis_data_tdata_Qneg">
+      <obj_property name="ElementShortName">m_axis_data_tdata_Qneg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_Qneg[7:0]</obj_property>
+   </wvobject>
+</wave_config>

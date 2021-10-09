@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Aug  5 01:44:05 2021
+# Process ID: 29183
+# Current directory: /home/caohy168/Work/bbp_vcu128/rs_codeco/rsdecode/rsdecode/solution1/sim/verilog
+# Command line: xsim -source {xsim.dir/decode_rs/xsim_script.tcl}
+# Log file: /home/caohy168/Work/bbp_vcu128/rs_codeco/rsdecode/rsdecode/solution1/sim/verilog/xsim.log
+# Journal file: /home/caohy168/Work/bbp_vcu128/rs_codeco/rsdecode/rsdecode/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/decode_rs/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+# xsim {decode_rs} -view {{decode_rs_dataflow_ana.wcfg}} -tclbatch {decode_rs.tcl} -protoinst {decode_rs.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file decode_rs.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_decode_rs_top/AESL_inst_decode_rs//AESL_inst_decode_rs_activity
+Time resolution is 1 ps
+open_wave_config decode_rs_dataflow_ana.wcfg
+source decode_rs.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set gg_out_group [add_wave_group gg_out(memory) -into $coutputgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/gg_out_d0 -into $gg_out_group -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/gg_out_we0 -into $gg_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/gg_out_ce0 -into $gg_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/gg_out_address0 -into $gg_out_group -radix hex
+## set index_of_out_group [add_wave_group index_of_out(memory) -into $coutputgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/index_of_out_d0 -into $index_of_out_group -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/index_of_out_we0 -into $index_of_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/index_of_out_ce0 -into $index_of_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/index_of_out_address0 -into $index_of_out_group -radix hex
+## set alpha_to_out_group [add_wave_group alpha_to_out(memory) -into $coutputgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/alpha_to_out_d0 -into $alpha_to_out_group -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/alpha_to_out_we0 -into $alpha_to_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/alpha_to_out_ce0 -into $alpha_to_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/alpha_to_out_address0 -into $alpha_to_out_group -radix hex
+## set recd_gf_out_group [add_wave_group recd_gf_out(memory) -into $coutputgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_gf_out_d0 -into $recd_gf_out_group -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_gf_out_we0 -into $recd_gf_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_gf_out_ce0 -into $recd_gf_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_gf_out_address0 -into $recd_gf_out_group -radix hex
+## set recd_out_group [add_wave_group recd_out(axis) -into $coutputgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_out_TREADY -into $recd_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_out_TVALID -into $recd_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_out_TDATA -into $recd_out_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set syn_error_out_group [add_wave_group syn_error_out(wire) -into $cinputgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/syn_error_out -into $syn_error_out_group -radix hex
+## set recd_in_group [add_wave_group recd_in(axis) -into $cinputgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_in_TREADY -into $recd_in_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_in_TVALID -into $recd_in_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/recd_in_TDATA -into $recd_in_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/ap_start -into $blocksiggroup
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/ap_done -into $blocksiggroup
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/ap_idle -into $blocksiggroup
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_decode_rs_top/AESL_inst_decode_rs/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_decode_rs_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_decode_rs_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_decode_rs_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_decode_rs_top/LENGTH_recd_in -into $tb_portdepth_group -radix hex
+## add_wave /apatb_decode_rs_top/LENGTH_recd_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_decode_rs_top/LENGTH_recd_gf_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_decode_rs_top/LENGTH_syn_error_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_decode_rs_top/LENGTH_alpha_to_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_decode_rs_top/LENGTH_index_of_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_decode_rs_top/LENGTH_gg_out -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_gg_out_group [add_wave_group gg_out(memory) -into $tbcoutputgroup]
+## add_wave /apatb_decode_rs_top/gg_out_d0 -into $tb_gg_out_group -radix hex
+## add_wave /apatb_decode_rs_top/gg_out_we0 -into $tb_gg_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/gg_out_ce0 -into $tb_gg_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/gg_out_address0 -into $tb_gg_out_group -radix hex
+## set tb_index_of_out_group [add_wave_group index_of_out(memory) -into $tbcoutputgroup]
+## add_wave /apatb_decode_rs_top/index_of_out_d0 -into $tb_index_of_out_group -radix hex
+## add_wave /apatb_decode_rs_top/index_of_out_we0 -into $tb_index_of_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/index_of_out_ce0 -into $tb_index_of_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/index_of_out_address0 -into $tb_index_of_out_group -radix hex
+## set tb_alpha_to_out_group [add_wave_group alpha_to_out(memory) -into $tbcoutputgroup]
+## add_wave /apatb_decode_rs_top/alpha_to_out_d0 -into $tb_alpha_to_out_group -radix hex
+## add_wave /apatb_decode_rs_top/alpha_to_out_we0 -into $tb_alpha_to_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/alpha_to_out_ce0 -into $tb_alpha_to_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/alpha_to_out_address0 -into $tb_alpha_to_out_group -radix hex
+## set tb_recd_gf_out_group [add_wave_group recd_gf_out(memory) -into $tbcoutputgroup]
+## add_wave /apatb_decode_rs_top/recd_gf_out_d0 -into $tb_recd_gf_out_group -radix hex
+## add_wave /apatb_decode_rs_top/recd_gf_out_we0 -into $tb_recd_gf_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/recd_gf_out_ce0 -into $tb_recd_gf_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/recd_gf_out_address0 -into $tb_recd_gf_out_group -radix hex
+## set tb_recd_out_group [add_wave_group recd_out(axis) -into $tbcoutputgroup]
+## add_wave /apatb_decode_rs_top/recd_out_TREADY -into $tb_recd_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/recd_out_TVALID -into $tb_recd_out_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/recd_out_TDATA -into $tb_recd_out_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_syn_error_out_group [add_wave_group syn_error_out(wire) -into $tbcinputgroup]
+## add_wave /apatb_decode_rs_top/syn_error_out -into $tb_syn_error_out_group -radix hex
+## set tb_recd_in_group [add_wave_group recd_in(axis) -into $tbcinputgroup]
+## add_wave /apatb_decode_rs_top/recd_in_TREADY -into $tb_recd_in_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/recd_in_TVALID -into $tb_recd_in_group -color #ffff00 -radix hex
+## add_wave /apatb_decode_rs_top/recd_in_TDATA -into $tb_recd_in_group -radix hex
+## save_wave_config decode_rs.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "268555000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 268595 ns : File "/home/caohy168/Work/bbp_vcu128/rs_codeco/rsdecode/rsdecode/solution1/sim/verilog/decode_rs.autotb.v" Line 486
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 13872.305 ; gain = 0.000 ; free physical = 68234 ; free virtual = 74780
+xsim: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 13872.305 ; gain = 2775.016 ; free physical = 68234 ; free virtual = 74779
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Aug  5 02:35:11 2021...

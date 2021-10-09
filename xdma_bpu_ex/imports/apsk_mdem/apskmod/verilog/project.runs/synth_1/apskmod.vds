@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun  8 03:43:02 2021
+# Process ID: 99681
+# Current directory: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado -log apskmod.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source apskmod.tcl
+# Log file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/synth_1/apskmod.vds
+# Journal file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source apskmod.tcl -notrace
+Command: synth_design -top apskmod -part xcvu37p-fsvh2892-2L-e -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu37p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu37p'
+INFO: [Device 21-403] Loading part xcvu37p-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 99938
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3220.984 ; gain = 173.715 ; free physical = 64797 ; free virtual = 71192
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'apskmod' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 7'b0000001 
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_state3 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state6 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state10 bound to: 7'b1000000 
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempin' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:37]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 340 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempin_ram' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 340 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempin_ram' (1#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempin' (2#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempin.v:37]
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempouti' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:37]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 340 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'apskmod_mod_tempouti_ram' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 340 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempouti_ram' (3#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_mod_tempouti' (4#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_mod_tempouti.v:37]
+INFO: [Synth 8-6157] synthesizing module 'apskmod_regslice_both' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_regslice_both' (5#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'apskmod_regslice_both__parameterized0' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'apskmod_regslice_both__parameterized0' (5#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'apskmod' (6#1) [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3281.891 ; gain = 234.621 ; free physical = 65311 ; free virtual = 71708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3296.766 ; gain = 249.496 ; free physical = 65368 ; free virtual = 71768
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3296.766 ; gain = 249.496 ; free physical = 65368 ; free virtual = 71768
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3296.766 ; gain = 0.000 ; free physical = 65362 ; free virtual = 71761
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.xdc]
+Finished Parsing XDC File [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/apskmod.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3474.266 ; gain = 0.000 ; free physical = 65078 ; free virtual = 71554
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3474.266 ; gain = 0.000 ; free physical = 65082 ; free virtual = 71558
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65229 ; free virtual = 71674
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu37p-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65234 ; free virtual = 71678
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65234 ; free virtual = 71678
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "apskmod_mod_tempin_ram:/ram_reg" of size (depth=340 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65220 ; free virtual = 71665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	              10K Bit	(340 X 32 bit)          RAMs := 2     
+	               2K Bit	(340 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	  33 Input   32 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "apskmod/mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg" of size (depth=340 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+RAM ("apskmod/mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg") is too shallow (depth = 340) to use URAM. Choosing BRAM instead of URAM 
+RAM ("apskmod/mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg") is too shallow (depth = 340) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-6904] The RAM "apskmod/mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg" of size (depth=340 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3474.266 ; gain = 426.996 ; free physical = 65141 ; free virtual = 71589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|apskmod     | mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
+|apskmod     | mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|Module Name | RTL Object                                    | Inference | Size (Depth x Width) | Primitives                                | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|apskmod     | mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg | Implied   | 512 x 8              | RAM16X1S x 16	RAM64X1S x 8	RAM256X1S x 8	 | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 3770.820 ; gain = 723.551 ; free physical = 64459 ; free virtual = 70957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 3796.852 ; gain = 749.582 ; free physical = 64430 ; free virtual = 70944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|apskmod     | mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
+|apskmod     | mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg | 340 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      |                 | 
++------------+---------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|Module Name | RTL Object                                    | Inference | Size (Depth x Width) | Primitives                                | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+|apskmod     | mod_tempin_U/apskmod_mod_tempin_ram_U/ram_reg | Implied   | 512 x 8              | RAM16X1S x 16	RAM64X1S x 8	RAM256X1S x 8	 | 
++------------+-----------------------------------------------+-----------+----------------------+-------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64427 ; free virtual = 70943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64430 ; free virtual = 70940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64430 ; free virtual = 70940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |LUT1      |     3|
+|2     |LUT2      |    16|
+|3     |LUT3      |    90|
+|4     |LUT4      |    28|
+|5     |LUT5      |    22|
+|6     |LUT6      |    98|
+|7     |RAM16X1S  |    16|
+|8     |RAM256X1S |     8|
+|9     |RAM64X1S  |     8|
+|10    |RAMB18E2  |     2|
+|11    |FDRE      |   213|
+|12    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.859 ; gain = 757.590 ; free physical = 64432 ; free virtual = 70941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 3804.859 ; gain = 580.090 ; free physical = 64466 ; free virtual = 70976
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3804.867 ; gain = 757.590 ; free physical = 64466 ; free virtual = 70976
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3815.828 ; gain = 0.000 ; free physical = 64569 ; free virtual = 71077
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell mod_tempouti_U/apskmod_mod_tempouti_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell mod_tempoutq_U/apskmod_mod_tempouti_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3899.195 ; gain = 0.000 ; free physical = 64484 ; free virtual = 70988
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 3899.195 ; gain = 1508.293 ; free physical = 64624 ; free virtual = 71128
+INFO: [Common 17-1381] The checkpoint '/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/synth_1/apskmod.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file apskmod_utilization_synth.rpt -pb apskmod_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 03:44:08 2021...

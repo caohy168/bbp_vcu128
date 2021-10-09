@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 23 02:36:36 2021
+# Process ID: 13805
+# Current directory: /home/caohy168/Work/Multiline_Synchprocess/control_flow
+# Command line: vivado -mode tcl
+# Log file: /home/caohy168/Work/Multiline_Synchprocess/control_flow/vivado.log
+# Journal file: /home/caohy168/Work/Multiline_Synchprocess/control_flow/vivado.jou
+#-----------------------------------------------------------
+source control_flow.tcl 
+open_wave_config /home/caohy168/Work/Multiline_Synchprocess/xdma_bpu_tx/board_behav.wcfg
+source board.tcl
+open_wave_config /home/caohy168/Work/Multiline_Synchprocess/xdma_bpu_rx/board_behav.wcfg
+source board.tcl

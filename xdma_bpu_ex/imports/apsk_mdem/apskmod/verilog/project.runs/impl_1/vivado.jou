@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun  8 03:45:11 2021
+# Process ID: 101796
+# Current directory: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1
+# Command line: vivado -log apskmod.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source apskmod.tcl -notrace
+# Log file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/apskmod.vdi
+# Journal file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/impl/verilog/project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source apskmod.tcl -notrace

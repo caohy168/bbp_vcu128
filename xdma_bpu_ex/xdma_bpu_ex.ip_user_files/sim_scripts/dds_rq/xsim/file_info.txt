@@ -1,0 +1,2 @@
+dds_rq.vhd,vhdl,xil_defaultlib,../../../ip/dds_rq/sim/dds_rq.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,56 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'root' on host 'caohy168' (Linux_x86_64 version 5.4.0-77-generic) on Thu Jul 15 22:44:59 EDT 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/caohy168/Work/bbp_vcu128/rs_codeco'
+Sourcing Tcl script '/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project rscode 
+INFO: [HLS 200-10] Opening project '/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode'.
+INFO: [HLS 200-1510] Running: set_top encode_rs 
+INFO: [HLS 200-1510] Running: add_files rscode.cpp 
+WARNING: [HLS 200-40] Cannot find design file 'rscode.cpp'
+INFO: [HLS 200-1510] Running: add_files rscode/rscode.h 
+INFO: [HLS 200-10] Adding design file 'rscode/rscode.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb rscode/rscode_inspire.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'rscode/rscode_inspire.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vitis 
+INFO: [HLS 200-10] Opening solution '/home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_top -name encode_rs encode_rs 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../rscode_inspire.cpp in debug mode
+../../../rscode_inspire.cpp: In function ‘int main()’:
+../../../rscode_inspire.cpp:18:31: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+  generate_gf(alpha_to_sim[nn+1]);
+              ~~~~~~~~~~~~~~~~~^
+In file included from ../../../rscode_inspire.cpp:1:0:
+../../../rscode.h:21:6: note:   initializing argument 1 of ‘void generate_gf(int*)’
+ void generate_gf(int alpha_to[nn+1]);
+      ^~~~~~~~~~~
+make: *** [csim.mk:73: obj/rscode_inspire.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.41 seconds. CPU system time: 0.14 seconds. Elapsed time: 0.47 seconds; current allocated memory: 191.726 MB.
+4
+    while executing
+"source /home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/solution1/csim.tcl"
+    invoked from within
+"hls::main /home/caohy168/Work/bbp_vcu128/rs_codeco/rscode/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"

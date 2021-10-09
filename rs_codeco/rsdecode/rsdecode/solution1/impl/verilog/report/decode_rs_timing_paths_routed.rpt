@@ -1,0 +1,757 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date              : Thu Aug  5 01:40:46 2021
+| Host              : caohy168 running 64-bit Ubuntu 20.04.2 LTS
+| Command           : report_timing -max_paths 10 -file ./report/decode_rs_timing_paths_routed.rpt
+| Design            : bd_0_wrapper
+| Device            : xcvu37p-fsvh2892
+| Speed File        : -2L  PRODUCTION 1.28 05-08-2020
+| Temperature Grade : E
+---------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.582ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[17]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.116ns  (logic 1.714ns (41.642%)  route 2.402ns (58.358%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.298     3.622    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X75Y27         LUT5 (Prop_F6LUT_SLICEL_I3_O)
+                                                      0.097     3.719 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_26/O
+                         net (fo=1, routed)           0.473     4.192    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[17]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[17])
+                                                     -0.231     9.774    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.774    
+                         arrival time                          -4.192    
+  -------------------------------------------------------------------
+                         slack                                  5.582    
+
+Slack (MET) :             5.600ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[4]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.073ns  (logic 1.716ns (42.131%)  route 2.357ns (57.869%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.228     3.552    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X75Y23         LUT5 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.099     3.651 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_39/O
+                         net (fo=1, routed)           0.498     4.149    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[4]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[4])
+                                                     -0.256     9.749    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.749    
+                         arrival time                          -4.149    
+  -------------------------------------------------------------------
+                         slack                                  5.600    
+
+Slack (MET) :             5.606ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[1]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.057ns  (logic 1.740ns (42.889%)  route 2.317ns (57.111%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.306     3.630    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X75Y27         LUT5 (Prop_C6LUT_SLICEL_I3_O)
+                                                      0.123     3.753 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_42/O
+                         net (fo=1, routed)           0.380     4.133    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[1]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[1])
+                                                     -0.266     9.739    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.739    
+                         arrival time                          -4.133    
+  -------------------------------------------------------------------
+                         slack                                  5.606    
+
+Slack (MET) :             5.630ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[6]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.044ns  (logic 1.669ns (41.271%)  route 2.375ns (58.729%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.347     3.671    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X74Y24         LUT5 (Prop_E6LUT_SLICEM_I3_O)
+                                                      0.052     3.723 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_37/O
+                         net (fo=1, routed)           0.397     4.120    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[6]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[6])
+                                                     -0.255     9.750    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.750    
+                         arrival time                          -4.120    
+  -------------------------------------------------------------------
+                         slack                                  5.630    
+
+Slack (MET) :             5.663ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[12]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.010ns  (logic 1.715ns (42.768%)  route 2.295ns (57.232%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.283     3.607    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X74Y23         LUT5 (Prop_F6LUT_SLICEM_I3_O)
+                                                      0.098     3.705 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_31/O
+                         net (fo=1, routed)           0.381     4.086    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[12]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[12])
+                                                     -0.256     9.749    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.749    
+                         arrival time                          -4.086    
+  -------------------------------------------------------------------
+                         slack                                  5.663    
+
+Slack (MET) :             5.666ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[24]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.008ns  (logic 1.740ns (43.413%)  route 2.268ns (56.587%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.315     3.639    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X73Y26         LUT5 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.123     3.762 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_19/O
+                         net (fo=1, routed)           0.322     4.084    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[24]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[24]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[24])
+                                                     -0.255     9.750    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.750    
+                         arrival time                          -4.084    
+  -------------------------------------------------------------------
+                         slack                                  5.666    
+
+Slack (MET) :             5.670ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[8]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.020ns  (logic 1.667ns (41.468%)  route 2.353ns (58.532%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.365     3.689    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X73Y26         LUT5 (Prop_A6LUT_SLICEL_I3_O)
+                                                      0.050     3.739 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_35/O
+                         net (fo=1, routed)           0.357     4.096    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[8]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[8])
+                                                     -0.239     9.766    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.766    
+                         arrival time                          -4.096    
+  -------------------------------------------------------------------
+                         slack                                  5.670    
+
+Slack (MET) :             5.689ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.963ns  (logic 1.670ns (42.140%)  route 2.293ns (57.860%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.326     3.650    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X74Y24         LUT5 (Prop_A6LUT_SLICEM_I3_O)
+                                                      0.053     3.703 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_43/O
+                         net (fo=1, routed)           0.336     4.039    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[0]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[0])
+                                                     -0.277     9.728    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.728    
+                         arrival time                          -4.039    
+  -------------------------------------------------------------------
+                         slack                                  5.689    
+
+Slack (MET) :             5.694ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[25]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.003ns  (logic 1.762ns (44.017%)  route 2.241ns (55.983%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.279     3.603    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X74Y29         LUT5 (Prop_D6LUT_SLICEM_I3_O)
+                                                      0.145     3.748 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_18__2/O
+                         net (fo=1, routed)           0.331     4.079    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[25]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[25]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[25])
+                                                     -0.232     9.773    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.773    
+                         arrival time                          -4.079    
+  -------------------------------------------------------------------
+                         slack                                  5.694    
+
+Slack (MET) :             5.701ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[2]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.964ns  (logic 1.717ns (43.315%)  route 2.247ns (56.685%))
+  Logic Levels:           9  (CARRY8=6 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 10.040 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.076ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.076     0.076    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X4Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[2])
+                                                      0.926     1.002 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DOUTADOUT[2]
+                         net (fo=3, routed)           0.492     1.494    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_q0[2]
+    SLICE_X75Y29         LUT3 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.123     1.617 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0/O
+                         net (fo=2, routed)           0.353     1.970    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_102__0_n_27
+    SLICE_X76Y29         CARRY8 (Prop_CARRY8_SLICEM_DI[3]_CO[7])
+                                                      0.106     2.076 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49/CO[7]
+                         net (fo=1, routed)           0.052     2.128    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_49_n_27
+    SLICE_X76Y30         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.143 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48/CO[7]
+                         net (fo=1, routed)           0.026     2.169    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_48_n_27
+    SLICE_X76Y31         CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.015     2.184 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47/CO[7]
+                         net (fo=1, routed)           0.026     2.210    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_47_n_27
+    SLICE_X76Y32         CARRY8 (Prop_CARRY8_SLICEM_CI_O[1])
+                                                      0.076     2.286 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_45/O[1]
+                         net (fo=4, routed)           0.649     2.935    bd_0_i/hls_inst/inst/add_ln161_fu_2847_p2[25]
+    SLICE_X75Y26         LUT6 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.147     3.082 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125/O
+                         net (fo=1, routed)           0.007     3.089    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_125_n_27
+    SLICE_X75Y26         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.153     3.242 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65/CO[7]
+                         net (fo=1, routed)           0.026     3.268    bd_0_i/hls_inst/inst/ram_reg_bram_0_i_65_n_27
+    SLICE_X75Y27         CARRY8 (Prop_CARRY8_SLICEL_CI_O[0])
+                                                      0.056     3.324 r  bd_0_i/hls_inst/inst/ram_reg_bram_0_i_46/O[0]
+                         net (fo=64, routed)          0.286     3.610    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/O[0]
+    SLICE_X74Y23         LUT5 (Prop_E6LUT_SLICEM_I3_O)
+                                                      0.100     3.710 r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0_i_41/O
+                         net (fo=1, routed)           0.330     4.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/l_d1[2]
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/DINBDIN[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5856, unset)         0.040    10.040    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ap_clk
+    RAMB36_X4Y5          RAMB36E2                                     r  bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.040    
+                         clock uncertainty           -0.035    10.005    
+    RAMB36_X4Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[2])
+                                                     -0.264     9.741    bd_0_i/hls_inst/inst/l_U/decode_rs_l_ram_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.741    
+                         arrival time                          -4.040    
+  -------------------------------------------------------------------
+                         slack                                  5.701    
+
+
+
+

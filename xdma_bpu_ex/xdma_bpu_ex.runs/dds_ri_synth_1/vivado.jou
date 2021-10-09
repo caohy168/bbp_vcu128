@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Sep 30 03:11:27 2021
+# Process ID: 27628
+# Current directory: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/dds_ri_synth_1
+# Command line: vivado -log dds_ri.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dds_ri.tcl
+# Log file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/dds_ri_synth_1/dds_ri.vds
+# Journal file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.runs/dds_ri_synth_1/vivado.jou
+#-----------------------------------------------------------
+source dds_ri.tcl -notrace

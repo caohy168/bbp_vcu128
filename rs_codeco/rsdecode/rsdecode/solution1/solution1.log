@@ -1,0 +1,686 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name decode_rs decode_rs 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.448 MB.
+INFO: [HLS 200-10] Analyzing design file 'rsdecode.cpp' ... 
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:16:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:16:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:47:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:47:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.05 seconds. CPU system time: 0.27 seconds. Elapsed time: 3.46 seconds; current allocated memory: 193.094 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'generate_gf(int*, int*)' into 'decode_rs(int*, int*, int*, int, int*, int*, int*)' (rsdecode.cpp:76:0)
+INFO: [HLS 214-178] Inlining function 'gen_poly(int*)' into 'decode_rs(int*, int*, int*, int, int*, int*, int*)' (rsdecode.cpp:76:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:19:14)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:25:16)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:25:16)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:28:11)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:33:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:38:14)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:48:8)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:49:8)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:58:30)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:58:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.62 seconds. CPU system time: 0.34 seconds. Elapsed time: 6.34 seconds; current allocated memory: 197.176 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 197.178 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.43 seconds; current allocated memory: 200.449 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 198.810 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_20_1' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_30_2' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_3' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_2' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_65_3' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_67_4' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_85_1' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_87_2' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_92_3' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_96_5' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_120_6' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_136_8' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_146_9' (rsdecode.cpp:147) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_152_10' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_166_11' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_168_12' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_171_13' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_185_14' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_195_15' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_199_16' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_205_18' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_231_20' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_238_21' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_249_23' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_256_24' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_267_25' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_276_26' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_284_27' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_293_28' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:16:15) in function 'decode_rs'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (rsdecode.cpp:157:6) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:181:9) to (rsdecode.cpp:185:33) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) to (rsdecode.cpp:231:25) in function 'decode_rs'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.52 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.55 seconds; current allocated memory: 222.142 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_50_1' (rsdecode.cpp:47:15) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_93_4' (rsdecode.cpp:81:16) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_130_7' (rsdecode.cpp:81:20) in function 'decode_rs' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_202_17' (rsdecode.cpp:81:22) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_221_19' (rsdecode.cpp:81:16) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_246_22' (rsdecode.cpp:81:16) in function 'decode_rs' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:19:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:22:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:23:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:25:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:28:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:33:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:36:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:38:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:48:8)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:49:8)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:52:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:55:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:58:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:66:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:85:47)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:89:13)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (rsdecode.cpp:103:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:116:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:117:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:118:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:119:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:122:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:123:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:125:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:126:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:127:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:128:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:135:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:138:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:139:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:162:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:167:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:170:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:174:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:177:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:188:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:196:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'reg' (rsdecode.cpp:200:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'reg' (rsdecode.cpp:208:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'root' (rsdecode.cpp:213:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'loc' (rsdecode.cpp:214:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'z' (rsdecode.cpp:234:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:242:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:261:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:269:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:278:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:287:14)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.62 seconds. CPU system time: 0 seconds. Elapsed time: 0.72 seconds; current allocated memory: 221.972 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decode_rs' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decode_rs' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'u_lu'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('8_write_ln25', rsdecode.cpp:25) of variable 'xor_ln25', rsdecode.cpp:25 on array 'alpha_to' and 'load' operation ('alpha_to_load_1', rsdecode.cpp:25) on array 'alpha_to'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_30_2'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('alpha_to_addr_2_write_ln33', rsdecode.cpp:33) of variable 'select_ln32', rsdecode.cpp:32 on array 'alpha_to' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'alpha_to'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_30_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_39_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_2'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 13, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 14, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 15, Depth = 17, loop 'VITIS_LOOP_53_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_65_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_65_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_67_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_67_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_85_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_87_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_87_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_92_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_92_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_96_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 38, loop 'VITIS_LOOP_96_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_120_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_120_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_146_9'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation ('and_ln146', rsdecode.cpp:146)) in the first pipeline iteration (II = 1 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_146_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_152_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_152_10'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_166_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_166_11'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_168_12'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 37, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 38, Depth = 38, loop 'VITIS_LOOP_168_12'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_171_13'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('elp_addr_10_write_ln173', rsdecode.cpp:173) of variable 'xor_ln173', rsdecode.cpp:173 on array 'elp', rsdecode.cpp:82 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'elp'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_171_13'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_136_8'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('elp_addr_4_write_ln139', rsdecode.cpp:139) of variable 'sext_ln139', rsdecode.cpp:139 on array 'elp', rsdecode.cpp:82 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'elp'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 3, loop 'VITIS_LOOP_136_8'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_185_14'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 18, loop 'VITIS_LOOP_185_14'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_276_26'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_276_26'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_195_15'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_195_15'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_199_16'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_199_16'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_205_18'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 38, loop 'VITIS_LOOP_205_18'
+INFO: ==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name decode_rs decode_rs 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register decode_rs recd_in 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register decode_rs recd_out 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.423 MB.
+INFO: [HLS 200-10] Analyzing design file 'rsdecode.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'recd_in' in function 'decode_rs' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: rsdecode.cpp:74
+WARNING: [HLS 214-140] Array stream parameter 'recd_out' in function 'decode_rs' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: rsdecode.cpp:74
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:16:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:16:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:47:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:47:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.92 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.66 seconds; current allocated memory: 193.168 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'generate_gf(int*, int*)' into 'decode_rs(int*, int*, int*, int, int*, int*, int*)' (rsdecode.cpp:76:0)
+INFO: [HLS 214-178] Inlining function 'gen_poly(int*)' into 'decode_rs(int*, int*, int*, int, int*, int*, int*)' (rsdecode.cpp:76:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:19:14)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:25:16)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:25:16)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:28:11)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:33:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:38:14)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:48:8)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:49:8)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:58:30)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:58:9)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'recd_in' (rsdecode.cpp:76:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'recd_out' (rsdecode.cpp:76:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.22 seconds. CPU system time: 0.28 seconds. Elapsed time: 4.59 seconds; current allocated memory: 197.270 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 197.272 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 200.570 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 198.913 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_20_1' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_30_2' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_3' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_2' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_65_3' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_67_4' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_85_1' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_87_2' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_92_3' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_96_5' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_120_6' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_136_8' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_146_9' (rsdecode.cpp:147) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_152_10' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_166_11' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_168_12' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_171_13' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_185_14' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_195_15' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_199_16' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_205_18' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_231_20' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_238_21' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_249_23' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_256_24' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_267_25' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_276_26' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_284_27' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_293_28' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:16:15) in function 'decode_rs'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (rsdecode.cpp:157:6) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:181:9) to (rsdecode.cpp:185:33) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) to (rsdecode.cpp:231:25) in function 'decode_rs'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.57 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.62 seconds; current allocated memory: 222.265 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_50_1' (rsdecode.cpp:47:15) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_93_4' (rsdecode.cpp:81:16) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_130_7' (rsdecode.cpp:81:20) in function 'decode_rs' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_202_17' (rsdecode.cpp:81:22) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_221_19' (rsdecode.cpp:81:16) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_246_22' (rsdecode.cpp:81:16) in function 'decode_rs' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:19:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:22:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:23:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:25:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:28:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:33:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:36:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:38:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:48:8)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:49:8)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:52:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:55:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:58:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:66:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:85:47)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:89:13)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (rsdecode.cpp:103:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:116:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:117:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:118:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:119:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:122:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:123:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:125:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:126:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:127:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:128:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:135:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:138:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:139:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:162:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:167:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:170:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:174:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:177:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:188:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:196:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'reg' (rsdecode.cpp:200:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'reg' (rsdecode.cpp:208:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'root' (rsdecode.cpp:213:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'loc' (rsdecode.cpp:214:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'z' (rsdecode.cpp:234:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:242:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:261:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:269:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:278:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:287:14)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.61 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.71 seconds; current allocated memory: 222.117 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decode_rs' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decode_rs' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'u_lu'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('8_write_ln25', rsdecode.cpp:25) of variable 'xor_ln25', rsdecode.cpp:25 on array 'alpha_to' and 'load' operation ('alpha_to_load_1', rsdecode.cpp:25) on array 'alpha_to'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_30_2'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('alpha_to_addr_2_write_ln33', rsdecode.cpp:33) of variable 'select_ln32', rsdecode.cpp:32 on array 'alpha_to' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'alpha_to'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_30_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_39_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_2'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 13, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 14, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 15, Depth = 17, loop 'VITIS_LOOP_53_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_65_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_65_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_67_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_67_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_85_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_87_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_87_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_92_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_92_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_96_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 38, loop 'VITIS_LOOP_96_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_120_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_120_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_146_9'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation ('and_ln146', rsdecode.cpp:146)) in the first pipeline iteration (II = 1 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_146_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_152_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_152_10'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_166_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_166_11'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_168_12'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 37, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 38, Depth = 38, loop 'VITIS_LOOP_168_12'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_171_13'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('elp_addr_10_write_ln173', rsdecode.cpp:173) of variable 'xor_ln173', rsdecode.cpp:173 on array 'elp', rsdecode.cpp:82 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'elp'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_171_13'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_136_8'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('elp_addr_4_write_ln139', rsdecode.cpp:139) of variable 'sext_ln139', rsdecode.cpp:139 on array 'elp', rsdecode.cpp:82 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'elp'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_top -name decode_rs decode_rs 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both decode_rs recd_in 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both decode_rs recd_out 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 207.431 MB.
+INFO: [HLS 200-10] Analyzing design file 'rsdecode.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'recd_in' in function 'decode_rs' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: rsdecode.cpp:74
+WARNING: [HLS 214-140] Array stream parameter 'recd_out' in function 'decode_rs' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: rsdecode.cpp:74
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:16:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:16:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:47:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:47:2
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+WARNING: [HLS 207-4801] 'register' storage class specifier is deprecated and incompatible with C++17: rsdecode.cpp:81:3
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.91 seconds. CPU system time: 0.21 seconds. Elapsed time: 3.4 seconds; current allocated memory: 209.146 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'generate_gf(int*, int*)' into 'decode_rs(int*, int*, int*, int, int*, int*, int*)' (rsdecode.cpp:76:0)
+INFO: [HLS 214-178] Inlining function 'gen_poly(int*)' into 'decode_rs(int*, int*, int*, int, int*, int*, int*)' (rsdecode.cpp:76:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:19:14)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:25:16)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:25:16)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:28:11)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:33:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:38:14)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:48:8)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:49:8)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:58:30)
+WARNING: [HLS 214-167] The program may have out of bound array access (rsdecode.cpp:58:9)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'recd_in' (rsdecode.cpp:76:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'recd_out' (rsdecode.cpp:76:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.32 seconds. CPU system time: 0.35 seconds. Elapsed time: 6.28 seconds; current allocated memory: 213.260 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 213.261 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.54 seconds; current allocated memory: 216.559 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 214.898 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_20_1' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_30_2' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_3' (rsdecode.cpp:16) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_2' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_65_3' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_67_4' (rsdecode.cpp:47) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_85_1' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_87_2' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_92_3' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_96_5' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_120_6' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_136_8' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_146_9' (rsdecode.cpp:147) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_152_10' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_166_11' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_168_12' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_171_13' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_185_14' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_195_15' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_199_16' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_205_18' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_231_20' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_238_21' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_249_23' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_256_24' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_267_25' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_276_26' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_284_27' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_293_28' (rsdecode.cpp:81) in function 'decode_rs' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:16:15) in function 'decode_rs'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (rsdecode.cpp:157:6) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:181:9) to (rsdecode.cpp:185:33) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) to (rsdecode.cpp:231:25) in function 'decode_rs'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (rsdecode.cpp:81:16) in function 'decode_rs'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.55 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 238.248 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_50_1' (rsdecode.cpp:47:15) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_93_4' (rsdecode.cpp:81:16) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_130_7' (rsdecode.cpp:81:20) in function 'decode_rs' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_202_17' (rsdecode.cpp:81:22) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_221_19' (rsdecode.cpp:81:16) in function 'decode_rs' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_246_22' (rsdecode.cpp:81:16) in function 'decode_rs' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:19:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:22:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:23:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:25:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:28:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'alpha_to' (rsdecode.cpp:33:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:36:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'index_of' (rsdecode.cpp:38:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:48:8)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:49:8)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:52:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:55:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:58:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'gg' (rsdecode.cpp:66:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:85:47)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:89:13)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (rsdecode.cpp:103:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:116:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:117:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:118:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:119:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:122:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:123:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:125:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:126:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:127:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:128:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:135:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:138:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:139:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'l' (rsdecode.cpp:162:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:167:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:170:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:174:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'u_lu' (rsdecode.cpp:177:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'd' (rsdecode.cpp:188:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'elp' (rsdecode.cpp:196:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'reg' (rsdecode.cpp:200:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'reg' (rsdecode.cpp:208:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'root' (rsdecode.cpp:213:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'loc' (rsdecode.cpp:214:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'z' (rsdecode.cpp:234:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:242:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:261:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:269:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:278:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'recd' (rsdecode.cpp:287:14)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.59 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.65 seconds; current allocated memory: 238.075 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decode_rs' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decode_rs' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'u_lu'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('8_write_ln25', rsdecode.cpp:25) of variable 'xor_ln25', rsdecode.cpp:25 on array 'alpha_to' and 'load' operation ('alpha_to_load_1', rsdecode.cpp:25) on array 'alpha_to'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_30_2'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('alpha_to_addr_2_write_ln33', rsdecode.cpp:33) of variable 'select_ln32', rsdecode.cpp:32 on array 'alpha_to' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'alpha_to'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_30_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_39_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_2'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 2, offset = 1) between 'store' operation ('gg_addr_2_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on array 'gg' and 'load' operation ('gg_load_1', rsdecode.cpp:54) on array 'gg'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 13, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_53_2'): Unable to enforce a carried dependence constraint (II = 14, distance = 1, offset = 0) between 'store' operation ('reuse_reg167_write_ln55', rsdecode.cpp:55) of variable 'storemerge7', rsdecode.cpp:55 on local variable 'reuse_reg167' and 'load' operation ('reuse_reg167_load') on local variable 'reuse_reg167'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 15, Depth = 17, loop 'VITIS_LOOP_53_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_65_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_65_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_67_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_67_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_85_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_87_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_87_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_92_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_92_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_96_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 38, loop 'VITIS_LOOP_96_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_120_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_120_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_146_9'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation ('and_ln146', rsdecode.cpp:146)) in the first pipeline iteration (II = 1 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_146_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_152_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_152_10'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_166_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_166_11'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_168_12'.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+WARNING: [HLS 200-880] The II Violation in module 'decode_rs' (loop 'VITIS_LOOP_168_12'): Unable to enforce a carried dependence constraint (II = 37, distance = 1, offset = 1) between 'store' operation ('elp_addr_8_write_ln170', rsdecode.cpp:170) of variable 'alpha_to_load_9', rsdecode.cpp:170 on array 'elp', rsdecode.cpp:82 and 'load' operation ('elp_load_1', rsdecode.cpp:169) on array 'elp', rsdecode.cpp:82.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 38, Depth = 38, loop 'VITIS_LOOP_168_12'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_171_13'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('elp_addr_10_write_ln173', rsdecode.cpp:173) of variable 'xor_ln173', rsdecode.cpp:173 on array 'elp', rsdecode.cpp:82 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'elp'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_171_13'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_136_8'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('elp_addr_4_write_ln139', rsdecode.cpp:139) of variable 'sext_ln139', rsdecode.cpp:139 on array 'elp', rsdecode.cpp:82 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'elp'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
