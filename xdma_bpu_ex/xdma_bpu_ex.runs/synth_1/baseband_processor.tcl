@@ -70,8 +70,17 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.BramSDPPropagationFix 1
+set_param chipscope.maxJobs 8
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param power.enableLutRouteBelPower 1
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-3059-ubuntu/incrSyn
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcvu37p-fsvh2892-2L-e
 
@@ -98,6 +107,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/parameters/bbp_parameter.vh
 read_verilog -library xil_defaultlib -sv {
+  /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/new/async_fifo.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/bbp_receive.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/bbp_transmit.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/new/channel_codes.sv
@@ -107,6 +117,7 @@ read_verilog -library xil_defaultlib -sv {
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/data_transfer.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/datastream_transfer.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/ddc.sv
+  /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/new/decimation.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/deintrlv.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/new/demodulation.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/descrambler.sv
@@ -115,6 +126,7 @@ read_verilog -library xil_defaultlib -sv {
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/new/energy_debalance.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/eqam.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/interleaver.sv
+  /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/new/interpolation.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/layer1_pull.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/layer1_push.sv
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/layer1_receive.sv
@@ -137,24 +149,17 @@ read_verilog -library xil_defaultlib -sv {
 read_verilog -library xil_defaultlib {
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/crc24_calc_1bit.v
   /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/crc24_insert_1bit.v
+  /home/caohuiyang/Work/bbp_vcu128/async_fifo/src/vlog/fifo_2mem.v
+  /home/caohuiyang/Work/bbp_vcu128/async_fifo/src/vlog/rptr_empty.v
+  /home/caohuiyang/Work/bbp_vcu128/async_fifo/src/vlog/sync_r2w.v
+  /home/caohuiyang/Work/bbp_vcu128/async_fifo/src/vlog/sync_w2r.v
+  /home/caohuiyang/Work/bbp_vcu128/async_fifo/src/vlog/wptr_full.v
 }
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/mult_gen_ddc/mult_gen_ddc.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/mult_gen_ddc/mult_gen_ddc_ooc.xdc]
 
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq_ooc.xdc]
-
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri_ooc.xdc]
-
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/mult_gen_duc/mult_gen_duc.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/mult_gen_duc/mult_gen_duc_ooc.xdc]
-
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q_ooc.xdc]
-
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i_ooc.xdc]
 
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/encoders/encoders.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.gen/sources_1/ip/encoders/constraints/encode_rs_ooc.xdc]
@@ -164,12 +169,6 @@ set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/
 
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/ddc_out_fifo/ddc_out_fifo.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/ddc_out_fifo/ddc_out_fifo_ooc.xdc]
-
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/axis_fifo_t8/axis_fifo_t8.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/axis_fifo_t8/axis_fifo_t8_ooc.xdc]
-
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/axis_fifo_t/axis_fifo_t.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/axis_fifo_t/axis_fifo_t_ooc.xdc]
 
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/duc_out_fifo/duc_out_fifo.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/duc_out_fifo/duc_out_fifo_ooc.xdc]
@@ -190,6 +189,18 @@ set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/
 
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/add_duc/add_duc.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.gen/sources_1/ip/add_duc/add_duc_ooc.xdc]
+
+read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci
+set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i_ooc.xdc]
+
+read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci
+set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q_ooc.xdc]
+
+read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci
+set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri_ooc.xdc]
+
+read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq.xci
+set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

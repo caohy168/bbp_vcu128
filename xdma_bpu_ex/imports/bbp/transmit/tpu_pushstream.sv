@@ -161,53 +161,127 @@ layer1_push layer1_pushstream(
 genvar i;
 generate
     for (i = 0; i < 8; i = i + 1)begin: buffer
-        axis_fifo_t axis_fifo_tI  (
-          .s_axis_aresetn(!reset),
-          .s_axis_aclk(clk_250m),
-          .s_axis_tvalid(m_axis_outputI_tvalid[i]),
-          .s_axis_tready(m_axis_outputI_tready[i]),
-          .s_axis_tdata(m_axis_outputI_tdata[i]),
-          .s_axis_tlast(m_axis_outputI_tlast[i]),
-          .m_axis_tvalid(m_axis_outputI_tvalid_radio[i]),
-          .m_axis_tready(m_axis_outputI_tready_radio[i]),
-          .m_axis_tdata(m_axis_outputI_tdata_radio[i]),
-          .m_axis_tlast(m_axis_outputI_tlast_radio[i]));
-             
-        axis_fifo_t axis_fifo_tQ  (
-          .s_axis_aresetn(!reset),
-          .s_axis_aclk(clk_250m),
-          .s_axis_tvalid(m_axis_outputQ_tvalid[i]),
-          .s_axis_tready(m_axis_outputQ_tready[i]),
-          .s_axis_tdata(m_axis_outputQ_tdata[i]),
-          .s_axis_tlast(m_axis_outputQ_tlast[i]),
-          .m_axis_tvalid(m_axis_outputQ_tvalid_radio[i]),
-          .m_axis_tready(m_axis_outputQ_tready_radio[i]),
-          .m_axis_tdata(m_axis_outputQ_tdata_radio[i]),
-          .m_axis_tlast(m_axis_outputQ_tlast_radio[i]));
+    
+         async_fifo # (
+            .DSIZE(16),
+            .ASIZE(10))
+            axis_fifo_tI(
+            .wclk(clk_250m),
+            .wrst_n(!reset),
+            .winc(m_axis_outputI_tvalid[i]),
+            .wdata(m_axis_outputI_tdata[i]),
+            .wfull(),
+            .awfull(),
+            .rclk(clk_250m),
+            .rrst_n(!reset),
+            .rinc(m_axis_outputI_tready_radio[i]),
+            .rdata(m_axis_outputI_tdata_radio[i]),
+            .rempty(),
+            .arempty(),
+            .rvalid(m_axis_outputI_tvalid_radio[i]),
+            .rlast(m_axis_outputI_tlast_radio[i]));
+    
+//        axis_fifo_t axis_fifo_tI  (
+//          .s_axis_aresetn(!reset),
+//          .s_axis_aclk(clk_250m),
+//          .s_axis_tvalid(m_axis_outputI_tvalid[i]),
+//          .s_axis_tready(m_axis_outputI_tready[i]),
+//          .s_axis_tdata(m_axis_outputI_tdata[i]),
+//          .s_axis_tlast(m_axis_outputI_tlast[i]),
+//          .m_axis_tvalid(m_axis_outputI_tvalid_radio[i]),
+//          .m_axis_tready(m_axis_outputI_tready_radio[i]),
+//          .m_axis_tdata(m_axis_outputI_tdata_radio[i]),
+//          .m_axis_tlast(m_axis_outputI_tlast_radio[i]));
+        async_fifo # (
+            .DSIZE(16),
+            .ASIZE(10))
+            axis_fifo_tQ(
+            .wclk(clk_250m),
+            .wrst_n(!reset),
+            .winc(m_axis_outputQ_tvalid[i]),
+            .wdata(m_axis_outputQ_tdata[i]),
+            .wfull(),
+            .awfull(),
+            .rclk(clk_250m),
+            .rrst_n(!reset),
+            .rinc(m_axis_outputQ_tready_radio[i]),
+            .rdata(m_axis_outputQ_tdata_radio[i]),
+            .rempty(),
+            .arempty(),
+            .rvalid(m_axis_outputQ_tvalid_radio[i]),
+            .rlast(m_axis_outputQ_tlast_radio[i]));            
+//        axis_fifo_t axis_fifo_tQ  (
+//          .s_axis_aresetn(!reset),
+//          .s_axis_aclk(clk_250m),
+//          .s_axis_tvalid(m_axis_outputQ_tvalid[i]),
+//          .s_axis_tready(m_axis_outputQ_tready[i]),
+//          .s_axis_tdata(m_axis_outputQ_tdata[i]),
+//          .s_axis_tlast(m_axis_outputQ_tlast[i]),
+//          .m_axis_tvalid(m_axis_outputQ_tvalid_radio[i]),
+//          .m_axis_tready(m_axis_outputQ_tready_radio[i]),
+//          .m_axis_tdata(m_axis_outputQ_tdata_radio[i]),
+//          .m_axis_tlast(m_axis_outputQ_tlast_radio[i]));
+         async_fifo # (
+            .DSIZE(16),
+            .ASIZE(10))
+            axis_fifo_t8I(
+            .wclk(clk_250m),
+            .wrst_n(!reset),
+            .winc(m_axis_outputI_tvalid_8[i]),
+            .wdata(m_axis_outputI_tdata_8[i]),
+            .wfull(),
+            .awfull(),
+            .rclk(clk_250m),
+            .rrst_n(!reset),
+            .rinc(m_axis_outputI_tready_radio8[i]),
+            .rdata(m_axis_outputI_tdata_radio8[i]),
+            .rempty(),
+            .arempty(),
+            .rvalid(m_axis_outputI_tvalid_radio8[i]),
+            .rlast(m_axis_outputI_tlast_radio8[i]));
+                      
+//         axis_fifo_t8 axis_fifo_t8I  (
+//          .s_axis_aresetn(!reset),
+//          .s_axis_aclk(clk_250m),
+//          .s_axis_tvalid(m_axis_outputI_tvalid_8[i]),
+//          .s_axis_tready(m_axis_outputI_tready_8[i]),
+//          .s_axis_tdata(m_axis_outputI_tdata_8[i]),
+//          .s_axis_tlast(m_axis_outputI_tlast_8[i]),
+//          .m_axis_tvalid(m_axis_outputI_tvalid_radio8[i]),
+//          .m_axis_tready(m_axis_outputI_tready_radio8[i]),
+//          .m_axis_tdata(m_axis_outputI_tdata_radio8[i]),
+//          .m_axis_tlast(m_axis_outputI_tlast_radio8[i]));
           
-         axis_fifo_t8 axis_fifo_t8I  (
-          .s_axis_aresetn(!reset),
-          .s_axis_aclk(clk_250m),
-          .s_axis_tvalid(m_axis_outputI_tvalid_8[i]),
-          .s_axis_tready(m_axis_outputI_tready_8[i]),
-          .s_axis_tdata(m_axis_outputI_tdata_8[i]),
-          .s_axis_tlast(m_axis_outputI_tlast_8[i]),
-          .m_axis_tvalid(m_axis_outputI_tvalid_radio8[i]),
-          .m_axis_tready(m_axis_outputI_tready_radio8[i]),
-          .m_axis_tdata(m_axis_outputI_tdata_radio8[i]),
-          .m_axis_tlast(m_axis_outputI_tlast_radio8[i]));
-          
-        axis_fifo_t8 axis_fifo_t8Q  (
-          .s_axis_aresetn(!reset),
-          .s_axis_aclk(clk_250m),
-          .s_axis_tvalid(m_axis_outputQ_tvalid_8[i]),
-          .s_axis_tready(m_axis_outputQ_tready_8[i]),
-          .s_axis_tdata(m_axis_outputQ_tdata_8[i]),
-          .s_axis_tlast(m_axis_outputQ_tlast_8[i]),
-          .m_axis_tvalid(m_axis_outputQ_tvalid_radio8[i]),
-          .m_axis_tready(m_axis_outputQ_tready_radio8[i]),
-          .m_axis_tdata(m_axis_outputQ_tdata_radio8[i]),
-          .m_axis_tlast(m_axis_outputQ_tlast_radio8[i]));
+        async_fifo # (
+            .DSIZE(8),
+            .ASIZE(10))
+            axis_fifo_t8Q(
+            .wclk(clk_250m),
+            .wrst_n(!reset),
+            .winc(m_axis_outputQ_tvalid_8[i]),
+            .wdata(m_axis_outputQ_tdata_8[i]),
+            .wfull(),
+            .awfull(),
+            .rclk(clk_250m),
+            .rrst_n(!reset),
+            .rinc(m_axis_outputQ_tready_radio8[i]),
+            .rdata(m_axis_outputQ_tdata_radio8[i]),
+            .rempty(),
+            .arempty(),
+            .rvalid(m_axis_outputQ_tvalid_radio8[i]),
+            .rlast(m_axis_outputQ_tlast_radio8[i]));  
+                      
+//        axis_fifo_t8 axis_fifo_t8Q  (
+//          .s_axis_aresetn(!reset),
+//          .s_axis_aclk(clk_250m),
+//          .s_axis_tvalid(m_axis_outputQ_tvalid_8[i]),
+//          .s_axis_tready(m_axis_outputQ_tready_8[i]),
+//          .s_axis_tdata(m_axis_outputQ_tdata_8[i]),
+//          .s_axis_tlast(m_axis_outputQ_tlast_8[i]),
+//          .m_axis_tvalid(m_axis_outputQ_tvalid_radio8[i]),
+//          .m_axis_tready(m_axis_outputQ_tready_radio8[i]),
+//          .m_axis_tdata(m_axis_outputQ_tdata_radio8[i]),
+//          .m_axis_tlast(m_axis_outputQ_tlast_radio8[i]));
 end
 endgenerate
 

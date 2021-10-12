@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Wed Sep 29 03:23:56 2021
-| Host         : ubuntu running 64-bit Ubuntu 18.04.6 LTS
+| Date         : Tue Oct 12 01:27:15 2021
+| Host         : ubuntu running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file baseband_processor_utilization_synth.rpt -pb baseband_processor_utilization_synth.pb
 | Design       : baseband_processor
 | Device       : xcvu37pfsvh2892-2L
@@ -35,17 +35,17 @@ Table of Contents
 +----------------------------+--------+-------+------------+-----------+-------+
 |          Site Type         |  Used  | Fixed | Prohibited | Available | Util% |
 +----------------------------+--------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 182301 |     0 |          0 |   1303680 | 13.98 |
-|   LUT as Logic             | 174995 |     0 |          0 |   1303680 | 13.42 |
-|   LUT as Memory            |   7306 |     0 |          0 |    600960 |  1.22 |
-|     LUT as Distributed RAM |   7242 |     0 |            |           |       |
-|     LUT as Shift Register  |     64 |     0 |            |           |       |
-| CLB Registers              | 180139 |     0 |          0 |   2607360 |  6.91 |
-|   Register as Flip Flop    | 163819 |     0 |          0 |   2607360 |  6.28 |
+| CLB LUTs*                  | 186110 |     0 |          0 |   1303680 | 14.28 |
+|   LUT as Logic             | 173812 |     0 |          0 |   1303680 | 13.33 |
+|   LUT as Memory            |  12298 |     0 |          0 |    600960 |  2.05 |
+|     LUT as Distributed RAM |  12202 |     0 |            |           |       |
+|     LUT as Shift Register  |     96 |     0 |            |           |       |
+| CLB Registers              | 182148 |     0 |          0 |   2607360 |  6.99 |
+|   Register as Flip Flop    | 165828 |     0 |          0 |   2607360 |  6.36 |
 |   Register as Latch        |  16320 |     0 |          0 |   2607360 |  0.63 |
-| CARRY8                     |    426 |     0 |          0 |    162960 |  0.26 |
-| F7 Muxes                   |  15787 |     0 |          0 |    651840 |  2.42 |
-| F8 Muxes                   |   5630 |     0 |          0 |    325920 |  1.73 |
+| CARRY8                     |    490 |     0 |          0 |    162960 |  0.30 |
+| F7 Muxes                   |  14123 |     0 |          0 |    651840 |  2.17 |
+| F8 Muxes                   |   5310 |     0 |          0 |    325920 |  1.63 |
 | F9 Muxes                   |      0 |     0 |          0 |    162960 |  0.00 |
 +----------------------------+--------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -63,10 +63,10 @@ Table of Contents
 | 0      |            _ |         Set |            - |
 | 0      |            _ |       Reset |            - |
 | 0      |          Yes |           - |            - |
-| 0      |          Yes |           - |          Set |
-| 16640  |          Yes |           - |        Reset |
-| 578    |          Yes |         Set |            - |
-| 162921 |          Yes |       Reset |            - |
+| 16     |          Yes |           - |          Set |
+| 18048  |          Yes |           - |        Reset |
+| 589    |          Yes |         Set |            - |
+| 163495 |          Yes |       Reset |            - |
 +--------+--------------+-------------+--------------+
 
 
@@ -164,25 +164,26 @@ Table of Contents
 +----------+--------+---------------------+
 | Ref Name |  Used  | Functional Category |
 +----------+--------+---------------------+
-| FDRE     | 162921 |            Register |
-| LUT6     | 100794 |                 CLB |
-| LUT3     |  41251 |                 CLB |
-| LUT5     |  35180 |                 CLB |
-| LUT2     |  28264 |                 CLB |
+| FDRE     | 163495 |            Register |
+| LUT6     |  99637 |                 CLB |
+| LUT3     |  41041 |                 CLB |
+| LUT5     |  34975 |                 CLB |
+| LUT2     |  29027 |                 CLB |
 | LDCE     |  16320 |            Register |
-| MUXF7    |  15787 |                 CLB |
-| LUT4     |   6401 |                 CLB |
-| RAMD64E  |   6218 |                 CLB |
-| MUXF8    |   5630 |                 CLB |
-| LUT1     |   3423 |                 CLB |
+| MUXF7    |  14123 |                 CLB |
+| RAMD64E  |  11178 |                 CLB |
+| LUT4     |   6383 |                 CLB |
+| MUXF8    |   5310 |                 CLB |
+| LUT1     |   3478 |                 CLB |
+| FDCE     |   1728 |            Register |
 | RAMD32   |   1024 |                 CLB |
-| FDSE     |    578 |            Register |
-| CARRY8   |    426 |                 CLB |
-| FDCE     |    320 |            Register |
+| FDSE     |    589 |            Register |
+| CARRY8   |    490 |                 CLB |
+| SRL16E   |     96 |                 CLB |
 | OBUF     |     82 |                 I/O |
 | INBUF    |     66 |                 I/O |
 | IBUFCTRL |     66 |              Others |
-| SRL16E   |     64 |                 CLB |
+| FDPE     |     16 |            Register |
 +----------+--------+---------------------+
 
 
@@ -196,8 +197,6 @@ Table of Contents
 | mult_gen_ddc |   32 |
 | duc_out_fifo |   16 |
 | ddc_out_fifo |   16 |
-| axis_fifo_t8 |   16 |
-| axis_fifo_t  |   16 |
 | sub_duc      |    8 |
 | sub_ddc      |    8 |
 | encoders     |    8 |

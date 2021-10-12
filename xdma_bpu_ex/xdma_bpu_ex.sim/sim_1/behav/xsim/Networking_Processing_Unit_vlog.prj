@@ -26,8 +26,6 @@ verilog xil_defaultlib  --include "../../../../imports/bbp/parameters" --include
 "../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/decode_rs.v" \
 "../../../../xdma_bpu_ex.gen/sources_1/ip/decoders/sim/decoders.v" \
 "../../../../xdma_bpu_ex.ip_user_files/ip/ddc_out_fifo/sim/ddc_out_fifo.v" \
-"../../../../xdma_bpu_ex.ip_user_files/ip/axis_fifo_t8/sim/axis_fifo_t8.v" \
-"../../../../xdma_bpu_ex.ip_user_files/ip/axis_fifo_t/sim/axis_fifo_t.v" \
 "../../../../xdma_bpu_ex.ip_user_files/ip/duc_out_fifo/sim/duc_out_fifo.v" \
 "../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_alpha_to.v" \
 "../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl/verilog/encode_rs_bb.v" \
@@ -44,10 +42,16 @@ verilog xil_defaultlib  --include "../../../../imports/bbp/parameters" --include
 "../../../../xdma_bpu_ex.ip_user_files/ip/bbp_mmc/bbp_mmc.v" \
 "../../../../imports/bbp/transmit/crc24_calc_1bit.v" \
 "../../../../imports/bbp/transmit/crc24_insert_1bit.v" \
+"../../../../../async_fifo/src/vlog/fifo_2mem.v" \
+"../../../../../async_fifo/src/vlog/rptr_empty.v" \
+"../../../../../async_fifo/src/vlog/sync_r2w.v" \
+"../../../../../async_fifo/src/vlog/sync_w2r.v" \
 "../../../../imports/sys_clk_gen.v" \
 "../../../../imports/sys_clk_gen_ds.v" \
+"../../../../../async_fifo/src/vlog/wptr_full.v" \
 
 sv xil_defaultlib  --include "../../../../imports/bbp/parameters" --include "../../../../imports/bbp/transmit/pcieroot" --include "../../../../imports/bbp/receive/pcieroot" --include "../../../../xdma_bpu_ex.ip_user_files/ipstatic/hdl" --include "../../../../xdma_bpu_ex.srcs/sources_1/ip/bbp_mmc" \
+"../../../../xdma_bpu_ex.srcs/sources_1/new/async_fifo.sv" \
 "../../../../xdma_bpu_ex.srcs/sources_1/new/baseband_processor.sv" \
 "../../../../imports/bbp/receive/bbp_receive.sv" \
 "../../../../imports/bbp/transmit/bbp_transmit.sv" \

@@ -6,17 +6,5 @@
 # IP: ip/mult_gen_ddc/mult_gen_ddc.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mult_gen_ddc || ORIG_REF_NAME==mult_gen_ddc} -quiet] -quiet
 
-# IP: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_rq/dds_rq.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dds_rq || ORIG_REF_NAME==dds_rq} -quiet] -quiet
-
-# IP: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dds_ri || ORIG_REF_NAME==dds_ri} -quiet] -quiet
-
 # IP: ip/mult_gen_duc/mult_gen_duc.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mult_gen_duc || ORIG_REF_NAME==mult_gen_duc} -quiet] -quiet
-
-# IP: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dds_125m_q || ORIG_REF_NAME==dds_125m_q} -quiet] -quiet
-
-# IP: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dds_125m_i || ORIG_REF_NAME==dds_125m_i} -quiet] -quiet

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1632909573">
+<GenRun Id="synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1634025457">
+  <File Type="VDS-TIMING-PB" Name="baseband_processor_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="baseband_processor_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="baseband_processor.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="baseband_processor_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="baseband_processor_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="baseband_processor_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="baseband_processor.vds"/>
   <File Type="REPORTS-TCL" Name="baseband_processor_reports.tcl"/>
   <File Type="PA-TCL" Name="baseband_processor.tcl"/>
-  <File Type="RDS-DCP" Name="baseband_processor.dcp"/>
-  <File Type="RDS-RDS" Name="baseband_processor.vds"/>
-  <File Type="RDS-UTIL" Name="baseband_processor_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="baseband_processor_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/mult_gen_ddc/mult_gen_ddc.xci">
@@ -15,44 +18,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/imports/bbp/receive/dds_rq/dds_rq.xci">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/receive/dds_rq/dds_rq.xci"/>
-        <Attr Name="ImportTime" Val="1629956473"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/imports/bbp/receive/dds_ri/dds_ri.xci">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/receive/dds_ri/dds_ri.xci"/>
-        <Attr Name="ImportTime" Val="1629956472"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/ip/mult_gen_duc/mult_gen_duc.xci">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci"/>
-        <Attr Name="ImportTime" Val="1629956471"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci"/>
-        <Attr Name="ImportTime" Val="1629956469"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -66,6 +33,48 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/imports/bbp/transmit/crc24_insert_1bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/fifo_2mem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/rptr_empty.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/sync_r2w.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/sync_w2r.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/wptr_full.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/async_fifo.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -141,6 +150,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/decimation.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/imports/bbp/receive/deintrlv.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -191,6 +207,13 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/imports/bbp/transmit/interleaver.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/interpolation.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -323,6 +346,20 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/mult_gen_ddc.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mult_gen_duc.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/imports/sys_clk_gen.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -350,48 +387,6 @@
     <File Path="$PPRDIR/imports/Networking_Processing_Unit.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/mult_gen_ddc.xcix">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/imports/bbp/receive/dds_rq.xcix">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/imports/bbp/receive/dds_ri.xcix">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/mult_gen_duc.xcix">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/imports/bbp/transmit/dds_125m_q.xcix">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/imports/bbp/transmit/dds_125m_i.xcix">
-      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -795,6 +790,38 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/async_bidir_fifo.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/async_bidir_ramif_fifo.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/fifomem_dp.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../async_fifo/src/vlog/sync_ptr.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="baseband_processor"/>
@@ -822,15 +849,17 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t"/>
-  <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t8"/>
-  <BlockFileSet Type="BlockSrcs" Name="encoders"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_rq"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_ri"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_125m_i"/>
+  <BlockFileSet Type="BlockSrcs" Name="sub_duc"/>
+  <BlockFileSet Type="BlockSrcs" Name="sub_ddc"/>
   <BlockFileSet Type="BlockSrcs" Name="add_duc"/>
   <BlockFileSet Type="BlockSrcs" Name="add_ddc"/>
-  <BlockFileSet Type="BlockSrcs" Name="ddc_out_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="decoders"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_ddc"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_duc"/>
   <BlockFileSet Type="BlockSrcs" Name="bbp_mmc"/>
+  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="ddc_out_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_125m_q"/>
+  <BlockFileSet Type="BlockSrcs" Name="decoders"/>
+  <BlockFileSet Type="BlockSrcs" Name="encoders"/>
 </GenRun>
