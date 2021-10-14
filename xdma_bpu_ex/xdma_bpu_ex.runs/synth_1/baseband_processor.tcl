@@ -70,17 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.BramSDPPropagationFix 1
-set_param chipscope.maxJobs 8
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param power.enableLutRouteBelPower 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-3059-ubuntu/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcvu37p-fsvh2892-2L-e
 
@@ -189,12 +181,6 @@ set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/
 
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/add_duc/add_duc.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.gen/sources_1/ip/add_duc/add_duc_ooc.xdc]
-
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_i/dds_125m_i_ooc.xdc]
-
-read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci
-set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/transmit/dds_125m_q/dds_125m_q_ooc.xdc]
 
 read_ip -quiet /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri.xci
 set_property used_in_implementation false [get_files -all /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/bbp/receive/dds_ri/dds_ri_ooc.xdc]

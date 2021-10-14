@@ -65,7 +65,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="vcu128"/>
-    <Option Name="WTXSimLaunchSim" Val="1323"/>
+    <Option Name="WTXSimLaunchSim" Val="1336"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -1269,6 +1269,7 @@
       </File>
       <File Path="$PPRDIR/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/transmit/dds_125m_i/dds_125m_i.xci"/>
           <Attr Name="ImportTime" Val="1629956469"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -1291,6 +1292,7 @@
       </File>
       <File Path="$PPRDIR/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/imports/bbp/transmit/dds_125m_q/dds_125m_q.xci"/>
           <Attr Name="ImportTime" Val="1629956471"/>
           <Attr Name="UsedIn" Val="synthesis"/>

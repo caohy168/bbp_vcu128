@@ -1,0 +1,199 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:07 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 2720
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Oct 12 18:25:31 PDT 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Ubuntu
+OS Version: 5.4.0-88-generic
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2
+Java executable: 	/tools/Xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2021.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: /root/.Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: /root/.Xilinx/Vivado/2021.1/
+Vivado layouts directory: /root/.Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.log
+Vivado journal file: 	/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-2720-ubuntu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2021.1
+XILINX_SDK: /tools/Xilinx/Vitis/2021.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2021.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,585 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 92 MB (+93600kb) [00:00:16]
+// [Engine Memory]: 1,571 MB (+1496095kb) [00:00:16]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: xdma_bpu_ex.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project xdma_bpu_ex.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,595 MB. GUI used memory: 60 MB. Current time: 10/12/21, 6:25:32 PM PDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,612 MB. GUI used memory: 58 MB. Current time: 10/12/21, 6:25:47 PM PDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,745 MB. GUI used memory: 58 MB. Current time: 10/12/21, 6:25:58 PM PDT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project xdma_bpu_ex.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskmod'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/rscodeco/rsdecode'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/rscodeco/rscode'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskdemod'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'. 
+// Tcl Message: INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,875 MB (+235895kb) [00:00:55]
+// [Engine Memory]: 2,067 MB (+102900kb) [00:00:58]
+// [GUI Memory]: 105 MB (+9084kb) [00:00:58]
+// [GUI Memory]: 111 MB (+686kb) [00:01:00]
+// [GUI Memory]: 119 MB (+2552kb) [00:01:00]
+// [GUI Memory]: 135 MB (+11043kb) [00:01:00]
+// WARNING: HEventQueue.dispatchEvent() is taking  7699 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 7804.719 ; gain = 506.883 ; free physical = 59490 ; free virtual = 63506 
+// Project name: xdma_bpu_ex; location: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex; part: xcvu37p-fsvh2892-2L-e
+dismissDialog("Open Project"); // bz
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 151 MB (+9749kb) [00:01:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,185 MB. GUI used memory: 99 MB. Current time: 10/12/21, 6:26:17 PM PDT
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 2,184 MB (+14298kb) [00:01:07]
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 167 MB (+8903kb) [00:04:19]
+// Elapsed time: 196 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv)]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv)]", 12); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv)]", 14); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_receive_group[0].bbp_receive : bbp_receive (bbp_receive.sv)]", 49); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), layer1_pushstream : layer1_push (layer1_push.sv)]", 15); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), layer1_pushstream : layer1_push (layer1_push.sv), layer1_transmit : layer1_transmit (layer1_transmit.sv)]", 16); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), layer1_pushstream : layer1_push (layer1_push.sv), layer1_transmit : layer1_transmit (layer1_transmit.sv), layer1_transmit_lane[0].channel_codes : channel_codes (channel_codes.sv)]", 18); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), layer1_pushstream : layer1_push (layer1_push.sv), layer1_transmit : layer1_transmit (layer1_transmit.sv), layer1_transmit_lane[0].channel_codes : channel_codes (channel_codes.sv), genblk1.rs_encoder_self : rs_encoder_self (rs_encoder_self.sv)]", 20); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), layer1_pushstream : layer1_push (layer1_push.sv), layer1_transmit : layer1_transmit (layer1_transmit.sv), layer1_transmit_lane[0].channel_codes : channel_codes (channel_codes.sv)]", 18); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), radio_pushstream : radio_push (radio_push.sv)]", 42); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), radio_pushstream : radio_push (radio_push.sv), radio_transmit : radio_transmit (radio_transmit.sv)]", 43); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), radio_pushstream : radio_push (radio_push.sv), radio_transmit : radio_transmit (radio_transmit.sv), duc_transmit[0].duc : duc (duc.sv)]", 45); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), radio_pushstream : radio_push (radio_push.sv), radio_transmit : radio_transmit (radio_transmit.sv), duc_transmit[0].duc : duc (duc.sv)]", 45, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), radio_pushstream : radio_push (radio_push.sv), radio_transmit : radio_transmit (radio_transmit.sv), duc_transmit[0].duc : duc (duc.sv)]", 45, true, false, false, false, false, true); // D - Double Click - Node
+// bz (cs):  Opening Editor : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,196 MB. GUI used memory: 109 MB. Current time: 10/12/21, 6:30:39 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,196 MB. GUI used memory: 109 MB. Current time: 10/12/21, 6:31:09 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,196 MB. GUI used memory: 109 MB. Current time: 10/12/21, 6:31:39 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,196 MB. GUI used memory: 109 MB. Current time: 10/12/21, 6:32:09 PM PDT
+// Elapsed time: 157 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Elapsed time: 27 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), radio_pushstream : radio_push (radio_push.sv), radio_transmit : radio_transmit (radio_transmit.sv), duc_transmit[0].duc : duc (duc.sv)]", 45); // D

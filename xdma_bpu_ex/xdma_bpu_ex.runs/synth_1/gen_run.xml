@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1634025457">
+<GenRun Id="synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1634182377">
   <File Type="VDS-TIMING-PB" Name="baseband_processor_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="baseband_processor_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="baseband_processor.dcp"/>
@@ -851,7 +851,6 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="dds_rq"/>
   <BlockFileSet Type="BlockSrcs" Name="dds_ri"/>
-  <BlockFileSet Type="BlockSrcs" Name="dds_125m_i"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_duc"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_ddc"/>
   <BlockFileSet Type="BlockSrcs" Name="add_duc"/>
@@ -859,7 +858,6 @@
   <BlockFileSet Type="BlockSrcs" Name="bbp_mmc"/>
   <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="ddc_out_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="dds_125m_q"/>
   <BlockFileSet Type="BlockSrcs" Name="decoders"/>
   <BlockFileSet Type="BlockSrcs" Name="encoders"/>
 </GenRun>
