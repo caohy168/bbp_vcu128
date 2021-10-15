@@ -23,7 +23,7 @@ module duc(
     input s_axis_data_tvalid_I,s_axis_data_tvalid_Q,
     input s_axis_data_tlast_I,s_axis_data_tlast_Q,
     output logic s_axis_dataI_tready,s_axis_dataQ_tready,
-    input [7:0]s_axis_data_tdata_I,s_axis_data_tdata_Q,
+    input signed[7:0]s_axis_data_tdata_I,s_axis_data_tdata_Q,
     input m_axis_data_tready_duc_I,m_axis_data_tready_duc_Q,
     output logic m_axis_data_tvalid_duc_I,m_axis_data_tvalid_duc_Q,
     output logic m_axis_data_tlast_duc_I,m_axis_data_tlast_duc_Q,
@@ -62,21 +62,21 @@ logic signed[7:0] vco_datai,vco_dataq;
 logic vco_phasei_valid,vco_phaseq_valid;
 logic signed[15:0] vco_phasei,vco_phaseq;
 
-//dds_125m_i dds_125m_i
-//   (
-//    .aclk(aclk),
-//    .m_axis_data_tvalid(vco_datai_valid),
-//    .m_axis_data_tdata(vco_datai),
-//    .m_axis_phase_tvalid(vco_phasei_valid),
-//    .m_axis_phase_tdata(vco_phasei));
-//dds_125m_q dds_125m_q
-//   (
-//    .aclk(aclk),
-//    .m_axis_data_tvalid(vco_dataq_valid),
-//    .m_axis_data_tdata(vco_dataq),
-//    .m_axis_phase_tvalid(vco_phaseq_valid),
-//    .m_axis_phase_tdata(vco_phaseq)
-//  ); 
+dds_125m_i dds_125m_i
+   (
+    .aclk(aclk),
+    .m_axis_data_tvalid(vco_datai_valid),
+    .m_axis_data_tdata(vco_datai),
+    .m_axis_phase_tvalid(vco_phasei_valid),
+    .m_axis_phase_tdata(vco_phasei));
+dds_125m_q dds_125m_q
+   (
+    .aclk(aclk),
+    .m_axis_data_tvalid(vco_dataq_valid),
+    .m_axis_data_tdata(vco_dataq),
+    .m_axis_phase_tvalid(vco_phaseq_valid),
+    .m_axis_phase_tdata(vco_phaseq)
+  ); 
   
 logic signed[7:0]ram_cos_temp[1:680];
 logic signed[7:0]ram_sin_temp[1:680];
@@ -92,55 +92,55 @@ logic [15:0]ram_sin_cnt=1;
 logic[15:0]ram_cos_state=0; 
 logic[15:0]ram_sin_state=0;         
 
-//always @(posedge aclk)begin
-//begin
-//  case (ram_cos_state)
-//     0: begin//get the high dot
-//        if (vco_phasei==-6559)
-//          ram_cos_state <=1;
-//        else
-//          ram_cos_state <=0;
-//     end
-//     1: begin//if no interpolation get 340 dot,if interpolation2 get 680 dot
-//        if (ram_cos_cnt==680)
-////        if (ram_cos_cnt==340)
-//          ram_cos_state <=2;
-//        else
-//          ram_cos_state <=1;
-//        ram_cos_cnt<=ram_cos_cnt+1;
-//        ram_cos[ram_cos_cnt]<=vco_datai;
+always @(posedge aclk)begin
+begin
+  case (ram_cos_state)
+     0: begin//get the high dot
+        if (vco_phasei==-6559)
+          ram_cos_state <=1;
+        else
+          ram_cos_state <=0;
+     end
+     1: begin//if no interpolation get 340 dot,if interpolation2 get 680 dot
+        if (ram_cos_cnt==680)
+//        if (ram_cos_cnt==340)
+          ram_cos_state <=2;
+        else
+          ram_cos_state <=1;
+        ram_cos_cnt<=ram_cos_cnt+1;
+        ram_cos[ram_cos_cnt]<=vco_datai;
         
-//        ram_cos_temp[ram_cos_cnt]<=vco_datai;
-//     end
+        ram_cos_temp[ram_cos_cnt]<=vco_datai;
+     end
      
-//     2:begin
-//        ram_cos_state <=ram_cos_state;
-//        end 
-//  endcase
-//  case (ram_sin_state)
-//     0: begin//get 0 dot
-//        if (vco_phaseq==-6565)
-//          ram_sin_state <=1;
-//        else
-//          ram_sin_state <=0;
-//     end
-//     1: begin//get 340 dot
-//        if (ram_sin_cnt==680)
-////        if (ram_sin_cnt==340)
-//          ram_sin_state <=2;
-//        else
-//          ram_sin_state <=1;
-//        ram_sin_cnt<=ram_sin_cnt+1;
-//        ram_sin[ram_sin_cnt]<=vco_dataq;
+     2:begin
+        ram_cos_state <=ram_cos_state;
+        end 
+  endcase
+  case (ram_sin_state)
+     0: begin//get 0 dot
+        if (vco_phaseq==-6565)
+          ram_sin_state <=1;
+        else
+          ram_sin_state <=0;
+     end
+     1: begin//get 340 dot
+        if (ram_sin_cnt==680)
+//        if (ram_sin_cnt==340)
+          ram_sin_state <=2;
+        else
+          ram_sin_state <=1;
+        ram_sin_cnt<=ram_sin_cnt+1;
+        ram_sin[ram_sin_cnt]<=vco_dataq;
         
-//        ram_sin_temp[ram_sin_cnt]<=vco_dataq;
-//     end
+        ram_sin_temp[ram_sin_cnt]<=vco_dataq;
+     end
      
-//     2:begin
-//        ram_sin_state <=ram_sin_state;
-//        end 
-//  endcase
-//  end end
+     2:begin
+        ram_sin_state <=ram_sin_state;
+        end 
+  endcase
+  end end
   
 //$$$$$$$$$$$$$$$$$cos(A+B)$$$$$$$$$$$$$$$$$$
 logic [15:0]mult_cnt=1;
@@ -157,18 +157,26 @@ always @(posedge aclk)begin
 end
 //======cosA*cosB=I*vcoi
 logic signed[15:0] cos_sub_data1;
+logic signed[15:0] cos_sub_data2; 
+
+logic signed[15:0] temp_cos_sub_data1;
+logic signed[15:0] temp_cos_sub_data2; 
+
 mult_gen_duc mult_duc_coscos(
     .CLK(aclk),
     .A(s_axis_data_tdata_I),
     .B(ram_cos1),
-    .P(cos_sub_data1));                
+    .P(cos_sub_data1));     
 //=====sinA*sinB=Q*vcoq
-logic signed[15:0] cos_sub_data2; 
 mult_gen_duc mult_duc_sinsin(
     .CLK(aclk),
     .A(s_axis_data_tdata_Q),
     .B(ram_sin1),
-    .P(cos_sub_data2));                                               
+    .P(cos_sub_data2));          
+always @(posedge aclk)begin
+    temp_cos_sub_data1 = s_axis_data_tdata_I * ram_cos1; 
+    temp_cos_sub_data2 = s_axis_data_tdata_Q * ram_sin1; 
+end                                    
 //======= cos(A+B)=cosA*cosB-sinA*sinB       
 logic signed[15:0] cos_sub_result;        
 sub_duc sub_duc(
@@ -184,11 +192,11 @@ sub_duc sub_duc(
 //        $writememh("/home/caohuiyang/Work/bbp_vcu128/dat_interaction/ducddc_memory/sinmemory", ram_sin_temp); 
 //end
 
-always @(*)begin
-    if(reset)begin
-        $readmemh("/home/caohuiyang/Work/bbp_vcu128/dat_interaction/ducddc_memory/cosmemory", ram_cos_temp); 
-        $readmemh("/home/caohuiyang/Work/bbp_vcu128/dat_interaction/ducddc_memory/sinmemory", ram_sin_temp); end
-end
+//always @(*)begin
+//    if(reset)begin
+//        $readmemh("/home/caohuiyang/Work/bbp_vcu128/dat_interaction/ducddc_memory/duc/cosmemory", ram_cos_temp); 
+//        $readmemh("/home/caohuiyang/Work/bbp_vcu128/dat_interaction/ducddc_memory/duc/sinmemory", ram_sin_temp); end
+//end
 
 //$$$$$$$$$$$$$$$$$sin(A+B)$$$$$$$$$$$$$$$$$$
 //======sinA*cosB=Q*vcoi

@@ -2,8 +2,8 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Oct 13 19:49:00 2021
-# Process ID: 71142
+# Start of session at: Thu Oct 14 22:47:22 2021
+# Process ID: 47407
 # Current directory: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.sim/sim_1/behav/xsim/xsim.dir/Networking_Processing_Unit_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.sim/sim_1/behav/xsim/webtalk.log

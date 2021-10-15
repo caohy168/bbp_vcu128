@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Oct 12 18:36:04 2021
+# Process ID: 4506
+# Current directory: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex
+# Command line: vivado xdma_bpu_ex.xpr
+# Log file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.log
+# Journal file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project xdma_bpu_ex.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/board_behav.wcfg
+source Networking_Processing_Unit.tcl
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /ddc_out_fifo_I}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_receive_group[0].bbp_receive /tpu_pullstream/radio_pullstream/radio_receive/\radio_receive[0].ddc /ddc_out_fifo_Q}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /duc_out_fifo_cos}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /duc_out_fifo_sin}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /aclk}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /reset}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tvalid_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tlast_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataI_tready}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_dataQ_tready}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /s_axis_data_tdata_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tready_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tvalid_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tlast_duc_Q}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_I}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /m_axis_data_tdata_duc_Q}} 
+restart
+run all
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /ram_cos}} {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /ram_sin}} 
+restart
+run all
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /ram_cos_cnt}} 
+current_wave_config {board_behav.wcfg}
+add_wave {{/Networking_Processing_Unit/baseband_processor/\bbp_transmit_group[0].bbp_transmit /tpu_pushstream/radio_pushstream/radio_transmit/\duc_transmit[0].duc /ram_sin_cnt}} 
+restart
+run all
+relaunch_sim
+restart
+run all
+save_wave_config {/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/board_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 32
+wait_on_run synth_1
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+close_sim

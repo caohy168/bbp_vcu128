@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Oct 14 00:10:33 2021
+# Process ID: 7602
+# Current directory: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex
+# Command line: vivado xdma_bpu_ex.xpr
+# Log file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.log
+# Journal file: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project xdma_bpu_ex.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/board_behav.wcfg
+source Networking_Processing_Unit.tcl
+run all
+close_sim

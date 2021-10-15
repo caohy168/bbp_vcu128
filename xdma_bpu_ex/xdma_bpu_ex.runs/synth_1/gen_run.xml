@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1634182377">
+<GenRun Id="synth_1" LaunchPart="xcvu37p-fsvh2892-2L-e" LaunchTime="1634266169">
   <File Type="VDS-TIMING-PB" Name="baseband_processor_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="baseband_processor_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="baseband_processor.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="baseband_processor_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="baseband_processor_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="baseband_processor_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="baseband_processor.vds"/>
-  <File Type="REPORTS-TCL" Name="baseband_processor_reports.tcl"/>
   <File Type="PA-TCL" Name="baseband_processor.tcl"/>
+  <File Type="REPORTS-TCL" Name="baseband_processor_reports.tcl"/>
+  <File Type="RDS-RDS" Name="baseband_processor.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="baseband_processor_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="baseband_processor_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="baseband_processor_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/mult_gen_ddc/mult_gen_ddc.xci">
@@ -853,11 +853,11 @@
   <BlockFileSet Type="BlockSrcs" Name="dds_ri"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_duc"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_ddc"/>
-  <BlockFileSet Type="BlockSrcs" Name="add_duc"/>
-  <BlockFileSet Type="BlockSrcs" Name="add_ddc"/>
-  <BlockFileSet Type="BlockSrcs" Name="bbp_mmc"/>
-  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="ddc_out_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="decoders"/>
   <BlockFileSet Type="BlockSrcs" Name="encoders"/>
+  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="ddc_out_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="bbp_mmc"/>
+  <BlockFileSet Type="BlockSrcs" Name="add_duc"/>
+  <BlockFileSet Type="BlockSrcs" Name="add_ddc"/>
 </GenRun>

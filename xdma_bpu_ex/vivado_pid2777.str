@@ -1,0 +1,270 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:07 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 2777
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Oct 14 01:14:16 PDT 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Ubuntu
+OS Version: 5.4.0-88-generic
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2
+Java executable: 	/tools/Xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2021.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: /root/.Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: /root/.Xilinx/Vivado/2021.1/
+Vivado layouts directory: /root/.Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.log
+Vivado journal file: 	/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-2777-ubuntu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2021.1
+XILINX_SDK: /tools/Xilinx/Vitis/2021.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2021.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,587 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 89 MB (+90976kb) [00:00:17]
+// [Engine Memory]: 1,574 MB (+1499105kb) [00:00:17]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: xdma_bpu_ex.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project xdma_bpu_ex.xpr 
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,597 MB. GUI used memory: 60 MB. Current time: 10/14/21, 1:14:17 AM PDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,613 MB. GUI used memory: 58 MB. Current time: 10/14/21, 1:14:32 AM PDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,744 MB. GUI used memory: 58 MB. Current time: 10/14/21, 1:14:44 AM PDT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project xdma_bpu_ex.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskmod'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/rscodeco/rsdecode'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/xdma_bpu_ex.srcs/sources_1/ip/rscodeco/rscode'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskdemod'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'. 
+// Tcl Message: INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,879 MB (+237567kb) [00:00:56]
+// [GUI Memory]: 96 MB (+2706kb) [00:00:59]
+// [Engine Memory]: 2,045 MB (+75096kb) [00:00:59]
+// [GUI Memory]: 106 MB (+5416kb) [00:01:00]
+// [GUI Memory]: 112 MB (+772kb) [00:01:01]
+// [GUI Memory]: 120 MB (+2476kb) [00:01:01]
+// [GUI Memory]: 137 MB (+10972kb) [00:01:01]
+// WARNING: HEventQueue.dispatchEvent() is taking  7557 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 7797.902 ; gain = 497.711 ; free physical = 59515 ; free virtual = 63498 
+// [GUI Memory]: 151 MB (+7263kb) [00:01:04]
+// Project name: xdma_bpu_ex; location: /home/caohuiyang/Work/bbp_vcu128/xdma_bpu_ex; part: xcvu37p-fsvh2892-2L-e
+dismissDialog("Open Project"); // bz
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,153 MB. GUI used memory: 94 MB. Current time: 10/14/21, 1:15:02 AM PDT
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [Engine Memory]: 2,154 MB (+6685kb) [00:01:06]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,262 MB (+641kb) [00:01:13]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 159 MB (+711kb) [00:01:14]
+// [GUI Memory]: 167 MB (+81kb) [00:10:59]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,260 MB. GUI used memory: 109 MB. Current time: 10/14/21, 1:45:03 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,230 MB. GUI used memory: 90 MB. Current time: 10/14/21, 2:15:03 AM PDT
+// Elapsed time: 4448 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv)]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv)]", 12); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv)]", 14); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), buffer[6].axis_fifo_t8I : async_fifo (async_fifo.sv)]", 43); // D
+// PAPropertyPanels.initPanels (async_fifo.sv) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), buffer[6].axis_fifo_t8I : async_fifo (async_fifo.sv)]", 43, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), buffer[6].axis_fifo_t8I : async_fifo (async_fifo.sv)]", 43, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), buffer[6].axis_fifo_t8I : async_fifo (async_fifo.sv)]", 43, true, false, false, false, false, true); // D - Double Click - Node
+// bz (cs):  Opening Editor : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Networking_Processing_Unit (Networking_Processing_Unit.sv), baseband_processor : baseband_processor (baseband_processor.sv), bbp_transmit_group[0].bbp_transmit : bbp_transmit (bbp_transmit.sv), tpu_pushstream : tpu_pushstream (tpu_pushstream.sv), buffer[5].axis_fifo_tI : async_fifo (async_fifo.sv)]", 37); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 56); // D
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton
+dismissDialog("Opening Editor"); // bz
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aK
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ; 184926 ; 165532 ; 0.0 ; 0 ; 0 ; Wed Oct 13 20:32:58 PDT 2021 ; 00:32:04 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xcvu37p-fsvh2892-2L-e ;  ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.3s
+selectButton(PAResourceEtoH.ExploreAheadView_RESET_SELECTED_RUNS, "Design Runs_reset"); // E
+// r (cs): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a
+// r (cs): Reset Runs: addNotify
+// bz (r):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 2,260 MB. GUI used memory: 97 MB. Current time: 10/14/21, 2:30:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,261 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:30:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,261 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:31:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,261 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:31:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,261 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:32:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,261 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:33:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,261 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:33:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:34:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:34:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:35:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:36:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:37:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:37:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:38:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:38:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:39:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:40:13 AM PDT
+// Elapsed time: 656 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:40:43 AM PDT
+// Elapsed time: 16 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 96 MB. Current time: 10/14/21, 2:41:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 96 MB. Current time: 10/14/21, 2:41:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:43:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:43:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:44:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:44:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:45:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 96 MB. Current time: 10/14/21, 2:46:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:46:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:47:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:47:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:48:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:49:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:50:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:50:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:51:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:51:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:52:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:53:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:53:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:54:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:54:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:56:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:56:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:57:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:57:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:59:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 2:59:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 3:00:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 3:00:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 3:02:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 3:02:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 3:03:13 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 3:03:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 95 MB. Current time: 10/14/21, 3:04:13 AM PDT
